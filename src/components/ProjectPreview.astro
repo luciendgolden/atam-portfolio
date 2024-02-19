@@ -7,8 +7,6 @@ type Props = { project: CollectionEntry<'projects'>; class?: string; headingLeve
 const { project, class: className, headingLevel = 'h2' } = Astro.props;
 const { title, description, seo } = project.data;
 const TitleTag = headingLevel;
-
-console.log(project)
 ---
 <a class:list={['flex justify-between items-start group overflow-hidden rounded-lg', className]} href={`/projects/${project.slug}/`}>
     <div class="grow">
@@ -16,13 +14,13 @@ console.log(project)
             <img src={seo.image.src} alt={seo.image.alt || `Image for ${title}`} class="w-full h-48 object-cover" />
         )}
         <div class="p-4">
-            <TitleTag class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl">
+            <TitleTag class="text-xl leading-tight font-serif font-medium sm:text-2xl">
                 {title}
             </TitleTag>
             {description && <div class="mt-1 text-sm leading-normal">{description}</div>}
         </div>
         <div class="p-4 text-right">
-            <span class="inline-flex items-center font-serif italic sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
+            <span class="inline-flex items-center font-serif italic group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
                 View Project <ArrowRight class="ml-2 w-4 h-4" />
             </span>
         </div>

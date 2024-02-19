@@ -1,7 +1,7 @@
 ---
-import NavLink from './NavLink.astro';
-import ThemeToggle from './ThemeToggle.astro';
-import siteConfig from '../data/site-config';
+import NavLink from "./NavLink.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import siteConfig from "../data/site-config";
 
 const navLinks = siteConfig.headerNavLinks || [];
 ---
@@ -41,12 +41,15 @@ const navLinks = siteConfig.headerNavLinks || [];
 <style>
     @media (max-width: 767px) {
         .menu {
-            @apply flex-col gap-1 absolute -top-2.5 -left-2.5 max-w-64 px-3 pt-16 pb-10 z-20 bg-main border border-dashed border-main invisible opacity-0;
-            width: calc(100% + 1.25rem);
+            @apply flex-col gap-1 absolute top-0 left-0 px-0 pt-16 pb-10 z-20 bg-main border border-dashed border-main invisible opacity-0;
+            width: 100%;
         }
         .menu.is-visible {
             @apply visible opacity-100;
             transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+        }
+        .menu li {
+            @apply text-center;
         }
         .menu-toggle-icon {
             transition: width 0.1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
@@ -58,7 +61,7 @@ const navLinks = siteConfig.headerNavLinks || [];
         .menu-toggle-icon:before,
         .menu-toggle-icon:after {
             @apply w-6 h-px absolute left-1/2 top-0 origin-center -translate-x-1/2 bg-current;
-            content: '';
+            content: "";
             transition:
                 transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
                 margin 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
@@ -87,16 +90,23 @@ const navLinks = siteConfig.headerNavLinks || [];
 
 <script>
     function menuToggle() {
-        const menu = document.querySelector('.menu');
-        const menuToggleBtn = document.querySelector('.menu-toggle');
-        menuToggleBtn?.addEventListener('click', () => {
-            const isMenuExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
-            menuToggleBtn.classList.toggle('is-active');
-            menuToggleBtn.setAttribute('aria-expanded', isMenuExpanded ? 'false' : 'true');
-            menuToggleBtn.setAttribute('aria-label', isMenuExpanded ? 'Open Menu' : 'Close Menu');
-            menu?.classList.toggle('is-visible');
+        const menu = document.querySelector(".menu");
+        const menuToggleBtn = document.querySelector(".menu-toggle");
+        menuToggleBtn?.addEventListener("click", () => {
+            const isMenuExpanded =
+                menuToggleBtn.getAttribute("aria-expanded") === "true";
+            menuToggleBtn.classList.toggle("is-active");
+            menuToggleBtn.setAttribute(
+                "aria-expanded",
+                isMenuExpanded ? "false" : "true",
+            );
+            menuToggleBtn.setAttribute(
+                "aria-label",
+                isMenuExpanded ? "Open Menu" : "Close Menu",
+            );
+            menu?.classList.toggle("is-visible");
         });
     }
     menuToggle();
-    document.addEventListener('astro:after-swap', menuToggle);
+    document.addEventListener("astro:after-swap", menuToggle);
 </script>
