@@ -38,7 +38,14 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
+    /*
+    logo: {
+        src: '/about.jpeg',
+        alt: 'logo',
+        caption: 'Portfolio and blog theme'
+    },
+    */
+    title: 'Tampier',
     subtitle: 'Minimal Astro.js theme',
     description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     image: {

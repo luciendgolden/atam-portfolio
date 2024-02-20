@@ -20,10 +20,10 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">
+                <h2 class="mb-12 text-xl font-sans sm:mb-16 sm:text-2xl">
                     Projects
                 </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {featuredProjects.map((project) => (
                         <ProjectPreview project={project} headingLevel="h3" />
                     ))}
@@ -37,7 +37,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">
+                <h2 class="mb-12 text-xl font-sans sm:mb-16 sm:text-2xl">
                     Posts
                 </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">

@@ -1,7 +1,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}'],
+    content: [
+        './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+        './node_modules/preline/plugin.js',
+    ],
     darkMode: 'class',
     theme: {
         fontFamily: {
@@ -53,12 +56,12 @@ module.exports = {
                             }
                         },
                         'h1,h2,h3,h4,h5,h6': {
-                            fontFamily: theme('fontFamily.serif'),
+                            fontFamily: theme('fontFamily.sans'),
                             fontWeight: 500
                         },
                         blockquote: {
                             border: 0,
-                            fontFamily: theme('fontFamily.serif'),
+                            fontFamily: theme('fontFamily.sans'),
                             fontSize: '1.3125em',
                             fontStyle: 'italic',
                             fontWeight: 'normal',
@@ -81,5 +84,8 @@ module.exports = {
             })
         }
     },
-    plugins: [require('@tailwindcss/typography')]
+    plugins: [
+        require('@tailwindcss/typography'),
+        require('preline/plugin'),
+    ]
 };
