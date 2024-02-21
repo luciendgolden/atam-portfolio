@@ -34,7 +34,7 @@ const { showHeader = true } = Astro.props;
                                     </a>
                                 ) : (
                                     <a
-                                        class="text-xl font-semibold dark:text-white"
+                                        class="font-medium tracking-widest uppercase border-b-2 border-transparent text-main sm:text-lg hover:border-custom-pink"
                                         href="/"
                                         aria-label="Brand"
                                     >
@@ -47,9 +47,9 @@ const { showHeader = true } = Astro.props;
                         <!-- Mobile Menu Button -->
                         <div class="md:hidden">
                             <button
+                                id="mobile-menu-button"
                                 type="button"
                                 class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
-                                data-hs-overlay="#hs-basic-modal"
                                 aria-label="Toggle navigation"
                             >
                                 Menu
@@ -79,7 +79,7 @@ const { showHeader = true } = Astro.props;
                                             <li>
                                                 <NavLink
                                                     href={link.href}
-                                                    class="block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                    class="block px-3 py-2 transition hover:text-[#ff5470]"
                                                 >
                                                     {link.text}
                                                 </NavLink>
@@ -89,63 +89,64 @@ const { showHeader = true } = Astro.props;
                             </ul>
                         </nav>
 
+                        <!-- Mobile Menu -->
                         <div
-                            class="hs-overlay hidden size-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none"
+                            id="mobile-menu"
+                            class="hidden size-full fixed inset-0 top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none transition-opacity duration-500 ease-in-out"
                         >
                             <div
-                                class="hs-overlay-open:opacity-100 hs-overlay-open:duration-500 opacity-0 transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto"
+                                class="pointer-events-auto sm:max-w-lg sm:w-full m-3 sm:mx-auto"
                             >
-                                <div class="pointer-events-auto">
+                                <div
+                                    id="mobile-menu-content"
+                                    class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+                                >
                                     <div
-                                        class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+                                        class="flex flex-row-reverse items-center justify-between"
                                     >
-                                        <div
-                                            class="flex flex-row-reverse items-center justify-between"
+                                        <button
+                                            id="mobile-menu-close-button"
+                                            type="button"
+                                            class="-m-1 p-1"
+                                            aria-label="Close menu"
                                         >
-                                            <button
-                                                type="button"
-                                                class="-m-1 p-1"
-                                                data-hs-overlay="#hs-basic-modal"
-                                                aria-label="Close menu"
-                                            >
-                                                <svg
-                                                    viewBox="0 0 24 24"
-                                                    aria-hidden="true"
-                                                    class="h-6 w-6 text-zinc-500 dark:text-zinc-400"
-                                                    ><path
-                                                        d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path></svg
-                                                ></button
-                                            >
-                                            <h2
-                                                class="text-sm font-medium text-zinc-600 dark:text-zinc-400"
-                                            >
-                                                Navigation
-                                            </h2>
-                                        </div><nav class="mt-6">
-                                            <ul
-                                                class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300"
-                                            >
-                                                {
-                                                    navLinks.map((link) => (
-                                                        <li>
-                                                            <a
-                                                                class="block py-2"
-                                                                href={link.href}
-                                                            >
-                                                                {link.text}
-                                                            </a>
-                                                        </li>
-                                                    ))
-                                                }
-                                            </ul>
-                                        </nav>
-                                    </div>
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="h-6 w-6 text-zinc-500 dark:text-zinc-400"
+                                                ><path
+                                                    d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path></svg
+                                            ></button
+                                        >
+                                        <h2
+                                            class="text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                                        >
+                                            Navigation
+                                        </h2>
+                                    </div><nav class="mt-6">
+                                        <ul
+                                            class="-my-2 text-sm font-sans md:py-4"
+                                        >
+                                            {
+                                                navLinks.map((link) => (
+                                                    <li>
+                                                        <a
+                                                            class="block py-2"
+                                                            href={link.href}
+                                                        >
+                                                            {link.text}
+                                                        </a>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -160,3 +161,56 @@ const { showHeader = true } = Astro.props;
         </div>
     </div>
 </div>
+
+<script>
+    // Function to initialize or re-initialize the mobile menu toggle functionality
+    function initMobileMenu() {
+        const pageContent = document.getElementById("page-content");
+        const modal = document.getElementById("mobile-menu");
+        const modalContent = document.getElementById("mobile-menu-content");
+        const openButton = document.getElementById("mobile-menu-button");
+        const closeButton = document.getElementById("mobile-menu-close-button");
+
+        function handleOpen() {
+            if (!modal) return;
+
+            modal.classList.remove("hidden");
+            setTimeout(() => (modal.style.opacity = "1"), 10); // Ensure this comes after removing 'hidden'
+            document.body.style.overflow = "hidden";
+            modal.classList.add("backdrop-blur-sm");
+            pageContent?.classList.add("pointer-events-none");
+        }
+
+        function handleClose() {
+            console.log("close");
+
+            if (!modal) return;
+
+            modal.style.opacity = "0";
+            setTimeout(() => {
+                modal.classList.add("hidden");
+                document.body.style.overflow = "";
+                pageContent?.classList.remove("pointer-events-none");
+            }, 300);
+            modal.classList.remove("backdrop-blur-sm");
+        }
+
+        // Clean up previous event listeners to prevent duplicates
+        openButton?.removeEventListener("click", handleOpen);
+        closeButton?.removeEventListener("click", handleClose);
+        modal?.removeEventListener("click", handleClose); // Ensure to clean this up as well to prevent duplicates
+
+        // Re-attach event listeners
+        openButton?.addEventListener("click", handleOpen);
+        closeButton?.addEventListener("click", handleClose);
+        modal?.addEventListener("click", handleClose);
+
+        // Prevent closing when clicking inside the modal content
+        modalContent?.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+    }
+
+    initMobileMenu();
+    document.addEventListener("astro:after-swap", initMobileMenu);
+</script>

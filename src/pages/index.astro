@@ -20,16 +20,16 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-sans sm:mb-16 sm:text-2xl">
+                <h2 class="mb-12 text-2xl font-semibold tracking-tight">
                     Projects
                 </h2>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid lg:grid-cols-2 gap-6">
                     {featuredProjects.map((project) => (
                         <ProjectPreview project={project} headingLevel="h3" />
                     ))}
-                    <div>
-                        <Button href="/projects">View All Projects</Button>
-                    </div>
+                </div>
+                <div class="mt-12">
+                    <Button href="/projects">View All Projects</Button>
                 </div>
             </div>
         )
@@ -37,19 +37,16 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-sans sm:mb-16 sm:text-2xl">
+                <h2 class="mb-12 text-2xl font-semibold tracking-tight">
                     Posts
                 </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
-                {featuredPosts.map((post) => (
-                    <PostPreview
-                        post={post}
-                        headingLevel="h3"
-                    />
-                ))}
-                <div>
-                    <Button href="/blog">View All Posts</Button>
+                <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+                    {featuredPosts.map((post) => (
+                        <PostPreview post={post} headingLevel="h3" />
+                    ))}
                 </div>
+                <div class="mt-12">
+                    <Button href="/blog">View All Posts</Button>
                 </div>
             </div>
         )

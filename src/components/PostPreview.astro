@@ -1,38 +1,83 @@
 ---
-import { type CollectionEntry } from 'astro:content';
-import ArrowRight from '../icons/ArrowRight.astro';
-import FormattedDate from './FormattedDate.astro';
+import { type CollectionEntry } from "astro:content";
+import ArrowRight from "../icons/ArrowRight.astro";
+import FormattedDate from "./FormattedDate.astro";
 
-type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h2' | 'h3' };
+type Props = {
+    post: CollectionEntry<"blog">;
+    class?: string;
+    headingLevel?: "h2" | "h3";
+};
 
-const { post, class: className, headingLevel = 'h2' } = Astro.props;
-const { title, publishDate, updatedDate, excerpt } = post.data;
+const { post, class: className, headingLevel = "h3" } = Astro.props;
+const { title, publishDate, updatedDate, excerpt, tags, seo } = post.data;
 const TitleTag = headingLevel;
+
+console.log(post.data);
 ---
 
-<a class:list={['flex justify-between items-start gap-8 group', className]} href={`/blog/${post.slug}/`}>
-    <div class="grow">
-        <TitleTag
-            class="text-xl leading-tight font-sans font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
-        >
-            {title}
-        </TitleTag>
-        <div class="mt-1 text-sm leading-normal">
-            <FormattedDate date={publishDate} />
-            {
-                updatedDate && (
-                    <>
-                        {' '}
-                        <span>
-                            (Updated on <FormattedDate date={updatedDate} />)
-                        </span>
-                    </>
-                )
-            }
+<a
+    class:list={[
+        "group rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600",
+        className,
+    ]}
+    href={`/blog/${post.slug}/`}
+>
+    <div class="sm:flex">
+        {
+            seo?.image && (
+                <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+                    <img
+                        src={seo.image.src}
+                        alt={seo.image.alt || `Image for ${title}`}
+                        class="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl grayscale"
+                    />
+                </div>
+            )
+        }
+        <div class="grow">
+            <div class="p-4 flex flex-col h-full sm:p-6">
+                <div class="mb-3">
+                    <p
+                        class="mb-5 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+                    >
+                        Business insight
+                    </p>
+                </div>
+                <TitleTag
+                    class="text-xl font-semibold text-main group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-custom-pink"
+                >
+                    {title}
+                </TitleTag>
+                <div class="mt-1 text-sm leading-normal">
+                    <FormattedDate date={publishDate} />
+                    {
+                        updatedDate && (
+                            <>
+                                {" "}
+                                <span>
+                                    (Updated on{" "}
+                                    <FormattedDate date={updatedDate} />)
+                                </span>
+                            </>
+                        )
+                    }
+                </div>
+                {
+                    excerpt && (
+                        <div class="mt-3 text-sm leading-normal">{excerpt}</div>
+                    )
+                }
+                <div class="mt-5 sm:mt-auto">
+                <span
+                    class="mt-4 inline-flex items-center gap-x-1 group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-custom-pink font-medium"
+                >
+                    Read More <ArrowRight
+                        class="ml-2 w-4 h-4 fill-dark dark:fill-white"
+                    />
+                </span>
+                </div>
+            </div>
         </div>
-        {excerpt && <div class="mt-3 text-sm leading-normal">{excerpt}</div>}
-    </div>
-    <div class="hidden font-sans opacity-0 transition group-hover:opacity-100 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
-        Read Post <ArrowRight class="fill-current w-4 h-4" />
     </div>
 </a>

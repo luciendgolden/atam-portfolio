@@ -7,17 +7,28 @@ module.exports = {
     ],
     darkMode: 'class',
     theme: {
+        screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+        },
         fontFamily: {
             sans: ['Inter', ...defaultTheme.fontFamily.sans],
             serif: ['Newsreader', ...defaultTheme.fontFamily.serif]
         },
         extend: {
+            colors: {
+                'custom-blue': 'rgb(var(--color-custom-blue) / <alpha-value>)',
+                'custom-pink': 'rgb(var(--color-custom-pink) / <alpha-value>)',
+            },
             textColor: {
                 main: 'rgb(var(--color-text-main) / <alpha-value>)'
             },
             backgroundColor: {
                 main: 'rgb(var(--color-bg-main) / <alpha-value>)',
-                muted: 'rgb(var(--color-bg-muted) / <alpha-value>)'
+                muted: 'rgb(var(--color-bg-muted) / <alpha-value>)',
+                accent: 'rgb(var(--color-bg-accent) / <alpha-value>)',
             },
             borderColor: {
                 main: 'rgb(var(--color-border-main) / <alpha-value>)'
@@ -51,6 +62,7 @@ module.exports = {
                             textDecorationStyle: 'dashed',
                             textDecorationThickness: '1px',
                             textUnderlineOffset: '2px',
+                            textDecorationColor: 'rgb(var(--color-custom-pink))',
                             '&:hover': {
                                 textDecorationStyle: 'solid'
                             }

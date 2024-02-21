@@ -1,28 +1,54 @@
 ---
-import { type CollectionEntry } from 'astro:content';
-import ArrowRight from '../icons/ArrowRight.astro';
+import { type CollectionEntry } from "astro:content";
+import ArrowRight from "../icons/ArrowRight.astro";
 
-type Props = { project: CollectionEntry<'projects'>; class?: string; headingLevel?: 'h2' | 'h3' };
+type Props = {
+    project: CollectionEntry<"projects">;
+    class?: string;
+    headingLevel?: "h2" | "h3";
+};
 
-const { project, class: className, headingLevel = 'h2' } = Astro.props;
+const { project, class: className, headingLevel = "h3" } = Astro.props;
 const { title, description, seo } = project.data;
 const TitleTag = headingLevel;
 ---
-<a class:list={['flex justify-between items-start group overflow-hidden', className]} href={`/projects/${project.slug}/`}>
-    <div class="grow">
-        {seo?.image && (
-            <img src={seo.image.src} alt={seo.image.alt || `Image for ${title}`} class="w-full h-48 object-cover rounded-lg" />
-        )}
-        <div class="p-4">
-            <TitleTag class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
+
+<a
+    class:list={[
+        "group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600",
+        className,
+    ]}
+    href={`/projects/${project.slug}/`}
+>
+    {
+        seo?.image && (
+            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+                <img
+                    src={seo.image.src}
+                    alt={seo.image.alt || `Image for ${title}`}
+                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out grayscale"
+                />
+            </div>
+        )
+    }
+    <div class="absolute top-0 inset-x-0 z-10">
+        <div class="p-4 flex flex-col h-full sm:p-6">
+            <!-- Avatar -->
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 inset-x-0 z-10">
+        <div class="flex flex-col h-full p-4 sm:p-6">
+            <TitleTag
+                class="text-lg sm:text-3xl font-semibold text-white group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-custom-pink"
+            >
                 {title}
             </TitleTag>
-            {description && <div class="mt-1 text-sm leading-normal">{description}</div>}
-        </div>
-        <div class="p-4 text-right">
-            <span class="inline-flex items-center font-sans group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
-                View Project <ArrowRight class="ml-2 w-4 h-4" />
-            </span>
+            {
+                description && (
+                    <div class="mt-2 text-white/[.8]">{description}</div>
+                )
+            }
         </div>
     </div>
 </a>

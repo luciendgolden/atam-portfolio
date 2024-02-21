@@ -1,16 +1,22 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 
-type AnchorProps = HTMLAttributes<'a'> & { type?: never };
-type ButtonProps = HTMLAttributes<'button'> & { href?: never };
+type AnchorProps = HTMLAttributes<'a'> & { type?: never, variant?: 'primary' | 'secondary' };
+type ButtonProps = HTMLAttributes<'button'> & { href?: never, variant?: 'primary' | 'secondary' };
 
 type Props = ButtonProps | AnchorProps;
 
-const { href, class: className, ...rest } = Astro.props;
-const buttonClasses =
-    'inline-flex items-center justify-center px-6 py-2 font-sans text-sm leading-tight  text-main bg-main border border-main rounded-full transition hover:bg-muted';
----
+const { href, class: className, variant = 'primary', ...rest } = Astro.props;
 
+const baseClasses = 'px-6 pt-3 pb-3.5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full transition';
+
+const variantClasses = {
+  primary: 'text-white bg-custom-blue hover:bg-custom-pink hover:text-white dark:bg-custom-pink dark:hover:bg-custom-blue dark:text-white',
+  secondary: 'text-main border border-main hover:border-custom-pink hover:text-main',
+};
+
+const buttonClasses = `${baseClasses} ${variantClasses[variant]}`;
+---
 {
     href ? (
         <a href={href} class:list={[buttonClasses, className]} {...rest}>

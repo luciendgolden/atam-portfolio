@@ -1,29 +1,65 @@
 ---
-import { marked } from 'marked';
-import Button from './Button.astro';
-import siteConfig from '../data/site-config';
+import { marked } from "marked";
+import Button from "./Button.astro";
+import siteConfig from "../data/site-config";
 
 const hero = siteConfig.hero;
 ---
 
 {
-    (hero?.title || hero?.image?.src || hero?.text || (hero?.actions && hero.actions.length > 0)) && (
-        <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
-            {hero.title && <h1 class="text-3xl leading-tight font-sans font-medium sm:text-5xl sm:leading-tight">{hero.title}</h1>}
-            {hero.image?.src && (
-                <figure>
-                    <img class="w-full object-cover h-96 sm:h-[480px] bg-no-repeat bg-center bg-cover rounded-xl" src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} />
-                    {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}
-                </figure>
-            )}
-            {hero.text && <div class="max-w-none prose prose-dante sm:prose-lg" set:html={marked.parse(hero.text)} />}
-            {hero.actions && hero.actions.length > 0 && (
-                <div class="flex flex-wrap gap-4">
-                    {hero.actions.map((action) => (
-                        <Button href={action.href}>{action.text}</Button>
-                    ))}
+    (hero?.title ||
+        hero?.image?.src ||
+        hero?.text ||
+        (hero?.actions && hero.actions.length > 0)) && (
+        <section class="mb-16 sm:mb-24">
+            <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+                {hero.image?.src && (
+                    <div class="lg:pl-20">
+                        <div class="max-w-xs px-2.5 lg:max-w-none">
+                            <img
+                                alt={hero.image.alt || ""}
+                                loading="lazy"
+                                width="800"
+                                height="800"
+                                decoding="async"
+                                data-nimg="1"
+                                class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                                sizes="(min-width: 1024px) 32rem, 20rem"
+                                src={hero.image.src}
+                                style="color: transparent;"
+                            />
+                            {hero.image.caption && (
+                                <figcaption class="mt-1.5 text-xs sm:text-sm">
+                                    {hero.image.caption}
+                                </figcaption>
+                            )}
+                        </div>
+                    </div>
+                )}
+                <div class="lg:order-first lg:row-span-2">
+                    {hero.title && (
+                        <h1 class="text-4xl font-bold tracking-tight">
+                            {hero.title}
+                        </h1>
+                    )}
+                    {hero.text && (
+                        <div
+                            class="mt-6 space-y-7 max-w-none prose prose-dante sm:prose-lg"
+                            set:html={marked.parse(hero.text)}
+                        />
+                    )}
+                    {hero.actions && hero.actions.length > 0 && (
+                        <div class="mt-6 flex sm:inline-flex flex-wrap gap-4">
+                            {hero.actions.map((action) => (
+                                <Button variant="primary" href={action.href}>
+                                    {action.text}
+                                </Button>
+                            ))}
+                        </div>
+                        <Button variant="secondary">Secondary Button</Button>
+                    )}
                 </div>
-            )}
+            </div>
         </section>
     )
 }
