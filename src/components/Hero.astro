@@ -37,26 +37,31 @@ const hero = siteConfig.hero;
                     </div>
                 )}
                 <div class="lg:order-first lg:row-span-2">
-                    {hero.title && (
-                        <h1 class="text-4xl font-bold tracking-tight">
-                            {hero.title}
-                        </h1>
-                    )}
+                    {hero.title && <h1>{hero.title}</h1>}
                     {hero.text && (
                         <div
-                            class="mt-6 space-y-7 max-w-none prose prose-dante sm:prose-lg"
+                            class="mt-6 space-y-7 max-w-none prose-dante sm:prose-lg"
                             set:html={marked.parse(hero.text)}
                         />
                     )}
                     {hero.actions && hero.actions.length > 0 && (
-                        <div class="mt-6 flex sm:inline-flex flex-wrap gap-4">
+                        <div class="mt-6 flex flex-col sm:flex-row sm:items-center flex-wrap gap-4">
                             {hero.actions.map((action) => (
-                                <Button variant="primary" href={action.href}>
+                                <Button
+                                    variant="primary"
+                                    href={action.href}
+                                    class="w-full sm:w-auto"
+                                >
                                     {action.text}
                                 </Button>
                             ))}
+                            <Button
+                                variant="secondary"
+                                class="w-full sm:w-auto"
+                            >
+                                Secondary Button
+                            </Button>
                         </div>
-                        <Button variant="secondary">Secondary Button</Button>
                     )}
                 </div>
             </div>

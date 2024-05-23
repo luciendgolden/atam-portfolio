@@ -24,7 +24,11 @@ const TitleTag = headingLevel;
         seo?.image && (
             <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
                 <img
-                    src={seo.image.src}
+                    src={
+                        seo.image.src.startsWith("/")
+                            ? seo.image.src
+                            : `/${seo.image.src}`
+                    }
                     alt={seo.image.alt || `Image for ${title}`}
                     class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out grayscale"
                 />

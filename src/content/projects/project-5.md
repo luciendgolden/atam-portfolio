@@ -8,7 +8,6 @@ seo:
     src: '/project-5.jpg'
 ---
 
-![Project preview](/project-5.jpg)
 
 **Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
 
