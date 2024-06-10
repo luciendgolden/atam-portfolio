@@ -1,46 +1,63 @@
 ---
-import siteConfig from '../data/site-config';
+import { Svg } from 'astro:components'
+import siteConfig from "../data/site-config";
+import iconMap from "../data/icon-map";
 
 const socialLinks = siteConfig.socialLinks || [];
 const navLinks = siteConfig.footerNavLinks || [];
 ---
 
-<footer class="pt-12 pb-10 sm:pt-24 sm:pb-14">
-    {
-        navLinks.length > 0 && (
-            <div class="mb-4 flex flex-wrap gap-x-6 gap-y-1">
-                {navLinks.map((link) => (
-                    <a class="font-sans hover:underline hover:underline-offset-2" href={link.href}>
-                        {link.text}
-                    </a>
-                ))}
-            </div>
-        )
-    }
-    <div
-        class:list={[
-            'pt-6 flex flex-col gap-4 border-t border-dashed border-main',
-            { 'sm:flex-row-reverse sm:justify-between sm:items-center': socialLinks.length > 0 }
-        ]}
-    >
+<footer class="mt-auto w-full max-w-[85rem] py-10 mx-auto">
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+        <div class="inline-flex items-center">
+            <a
+                class="text-xl font-semibold"
+                href="/"
+                aria-label="Brand"
+            >
+                {siteConfig.title}
+            </a>
+
+            <div class="border-s ps-5 ms-5">
+                <p class="text-sm text-neutral-400">&copy; {new Date().getFullYear()}&nbsp;</p>
+              </div>
+        </div>
+        <!-- End Col -->
+
+        {
+            navLinks.length > 0 && (
+                <ul class="text-center">
+                    {navLinks.map((link) => (
+                        <li class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+                            <a
+                                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200"
+                                href={link.href}
+                            >
+                                {link.text}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            )
+        }
+
+        <!-- Social Brands -->
         {
             socialLinks.length > 0 && (
-                <div class="flex flex-wrap gap-x-4 gap-y-1">
+                <div class="md:text-end space-x-2">
                     {socialLinks.map((link) => (
                         <a
-                            class="inline-flex items-center justify-center text-sm hover:underline hover:underline-offset-2"
+                            class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700"
                             href={link.href}
-                            target="_blank"
-                            rel="noopener noreferer"
                         >
-                            {link.text}
+                            {link.icon && <Fragment set:html={ iconMap[link.icon] } />}
                         </a>
                     ))}
                 </div>
             )
         }
-        <p class="text-sm">
-            &copy; {new Date().getFullYear()}&nbsp;<a class="hover:underline hover:underline-offset-2" href="/">{siteConfig.title}</a>. All rights reserved.
-        </p>
+        <!-- End Social Brands -->
     </div>
+    <!-- End Grid -->
 </footer>

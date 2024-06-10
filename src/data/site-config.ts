@@ -7,6 +7,7 @@ export type Image = {
 export type Link = {
     text: string;
     href: string;
+    icon?: string;
 };
 
 export type Hero = {
@@ -83,23 +84,27 @@ const siteConfig: SiteConfig = {
             text: 'Terms',
             href: '/terms'
         },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
             text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            href: 'https://twitter.com/',
+            icon: 'twitter'
+        },
+        {
+            text: 'GitHub',
+            href: 'https://github.com',
+            icon: 'github'
+        },
+        {
+            text: 'LinkedIn',
+            href: 'https://linkedin.com',
+            icon: 'linkedin'
+        },
+        {
+            text: 'RSS',
+            href: '/rss.xml',
+            icon: 'rss'
         }
     ],
     hero: {

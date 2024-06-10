@@ -29,8 +29,6 @@ type Props = {
 const { project, prevProject, nextProject } = Astro.props;
 const { title, description, seo } = project.data;
 const { Content } = await project.render();
-
-console.log(project.data);
 ---
 
 <BaseLayout
