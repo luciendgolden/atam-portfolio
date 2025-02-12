@@ -23,7 +23,7 @@ const { showHeader = true } = Astro.props;
                                 siteConfig.logo &&
                                 siteConfig.logo?.src ? (
                                     <a
-                                        href="/"
+                                        href={import.meta.env.BASE_URL}
                                         class="h-10 w-10 rounded-full overflow-hidden"
                                     >
                                         <img
@@ -35,7 +35,7 @@ const { showHeader = true } = Astro.props;
                                 ) : (
                                     <a
                                         class="font-medium tracking-widest uppercase border-b-2 border-transparent text-main sm:text-lg hover:border-custom-pink"
-                                        href="/"
+                                        href={import.meta.env.BASE_URL}
                                         aria-label="Brand"
                                     >
                                         {siteConfig.title}
@@ -78,7 +78,7 @@ const { showHeader = true } = Astro.props;
                                         navLinks.map((link) => (
                                             <li>
                                                 <NavLink
-                                                    href={link.href}
+                                                    href={`${import.meta.env.BASE_URL}${link.href}`}
                                                     class="block px-3 py-2 transition hover:text-[#ff5470]"
                                                 >
                                                     {link.text}
@@ -138,7 +138,7 @@ const { showHeader = true } = Astro.props;
                                                     <li>
                                                         <a
                                                             class="block py-2"
-                                                            href={link.href}
+                                                            href={`${import.meta.env.BASE_URL}${link.href}`}
                                                         >
                                                             {link.text}
                                                         </a>

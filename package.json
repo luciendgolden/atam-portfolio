@@ -7,7 +7,9 @@
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "predeploy": "astro build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@astrojs/mdx": "^2.1.1",
@@ -20,7 +22,8 @@
         "postcss": "^8.4.38",
         "postcss-apply": "^0.12.0",
         "preline": "^2.0.3",
-        "tailwindcss": "^3.4.3"
+        "tailwindcss": "^3.4.3",
+        "gh-pages": "^4.0.0"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.13",

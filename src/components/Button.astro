@@ -19,7 +19,7 @@ const buttonClasses = `${baseClasses} ${variantClasses[variant]}`;
 ---
 {
     href ? (
-        <a href={href} class:list={[buttonClasses, className]} {...rest}>
+        <a href={`${import.meta.env.BASE_URL}${href}`} class:list={[buttonClasses, className]} {...rest}>
             <slot />
         </a>
     ) : (
