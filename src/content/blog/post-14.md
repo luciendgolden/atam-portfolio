@@ -12,8 +12,6 @@ seo:
     alt: Wavy lines
 ---
 
-![Wavy lines](/post-14.jpg)
-
 **Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
 
 **Choosing the right framework** for your web project is a critical decision that can significantly impact the development process and the success of your project. With so many options available, it's essential to consider various factors before making a choice. Here's a step-by-step guide on how to choose the right framework for your web project.

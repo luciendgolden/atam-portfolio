@@ -40,7 +40,7 @@ const hero = siteConfig.hero;
                     {hero.title && <h1>{hero.title}</h1>}
                     {hero.text && (
                         <div
-                            class="mt-6 space-y-7 max-w-none prose-dante sm:prose-lg"
+                            class="mt-6 space-y-7 max-w-none sm:prose-lg"
                             set:html={marked.parse(hero.text)}
                         />
                     )}

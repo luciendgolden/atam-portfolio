@@ -11,8 +11,6 @@ seo:
     alt: Walking person silhouette
 ---
 
-![Walking person silhouette](/post-6.jpg)
-
 **Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
 
 Front-end development has come a long way since the early days of the World Wide Web. From static HTML pages to dynamic and interactive web applications, the evolution of front-end development has been nothing short of remarkable. In this post, we'll take a fascinating journey through time to explore how front-end development has evolved over the years.

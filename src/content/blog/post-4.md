@@ -12,8 +12,6 @@ seo:
     alt: Wavy lines on a dark background
 ---
 
-![Wavy lines on a dark background](/post-4.jpg)
-
 **Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
 
 In the dynamic landscape of the internet, where users access websites through a myriad of browsers and devices, ensuring cross-browser compatibility is crucial for delivering a seamless user experience. A website that functions flawlessly across different browsers not only enhances user satisfaction but also broadens its reach. Here are some key strategies to ensure your web project thrives on diversity and provides a consistent experience for all users:
