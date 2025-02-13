@@ -11,7 +11,7 @@ import { slugify } from '../../utils/common-utils';
 export async function getStaticPaths() {
     const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
     const postCount = posts.length;
-    return posts.map((post, index) => ({
+    return posts.map((post: { slug: any; }, index: number) => ({
         params: { slug: post.slug },
         props: {
             post,
@@ -54,7 +54,7 @@ const { Content } = await post.render();
             {
                 tags.length > 0 && (
                     <div class="flex flex-wrap gap-x-5 gap-y-1 text-sm">
-                        {tags.map((tag) => (
+                        {tags.map((tag: any) => (
                             <a class="text-main hover:underline" href={`/tags/${slugify(tag)}`}>
                                 #{tag}
                             </a>
@@ -74,7 +74,6 @@ const { Content } = await post.render();
             </div>
         )
     }
-    <Subscribe class="my-16 sm:my-24" />
 </BaseLayout>
 
 <script>

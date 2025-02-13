@@ -4,6 +4,8 @@ import ArrowRight from '../icons/ArrowRight.astro';
 import IconButton from './IconButton.astro';
 
 const { page, class: className } = Astro.props;
+
+const getFullURL = (url: any) => url ? `${import.meta.env.BASE_URL}${url}` : null;
 ---
 
 <nav aria-label="Pagination" class:list={['px-12 py-2 relative text-center', className]}>
@@ -11,7 +13,7 @@ const { page, class: className } = Astro.props;
         page.url.prev && (
             <IconButton
                 class="absolute left-0 top-1/2 -translate-y-1/2"
-                href={page.url.prev}
+                href={getFullURL(page.url.prev)}
                 aria-label={`Go to page ${page.currentPage - 1} of ${page.lastPage}`}
             >
                 <ArrowLeft class="w-5 h-5 fill-current" />
@@ -23,7 +25,7 @@ const { page, class: className } = Astro.props;
         page.url.next && (
             <IconButton
                 class="absolute right-0 top-1/2 -translate-y-1/2"
-                href={page.url.next}
+                href={getFullURL(page.url.next)}
                 aria-label={`Go to page ${page.currentPage + 1} of ${page.lastPage}`}
             >
                 <ArrowRight class="w-5 h-5 fill-current" />

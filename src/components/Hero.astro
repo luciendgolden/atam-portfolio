@@ -49,7 +49,7 @@ const hero = siteConfig.hero;
                             {hero.actions.map((action) => (
                                 <Button
                                     variant="primary"
-                                    href={action.href}
+                                    href={`${import.meta.env.BASE_URL}${action.href}`}
                                     class="w-full sm:w-auto"
                                 >
                                     {action.text}
