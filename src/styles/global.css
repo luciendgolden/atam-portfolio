@@ -6,31 +6,35 @@
 @layer base {
     :root {
         --color-text-main: 23 23 23; /* #171717 */
-        --color-bg-main: 255 255 255; /* #F2F1EC */
+        --color-bg-main: 255 255 255; /* #FFFFFF */
         --color-bg-muted: 36 36 36; /* #242424 */
         --color-border-main: 23 23 23; /* #171717 */
         --color-bg-accent: 27 45 69;
         --color-custom-blue: 27 45 69;
-        --color-custom-pink: 255 84 112;
+        --color-custom-pink: 47 79 105;
     }
     html.dark {
         --color-text-main: 242 241 236; /* #F2F1EC */
         --color-bg-main: 23 23 23; /* #171717 */
         --color-bg-muted: 36 36 36; /* #242424 */
         --color-border-main: 242 241 236; /* #F2F1EC */
-        --color-bg-accent: 255 84 112;
+        --color-bg-accent: 47 79 105;
         --color-custom-blue: 27 45 69;
-        --color-custom-pink: 255 84 112;
+        --color-custom-pink: 47 79 105;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-mono;
     }
 
     h1 {
-        @apply text-4xl font-bold tracking-tight;
+        @apply text-4xl font-medium leading-tight tracking-tight;
     }
     h2 {
-        @apply text-2xl font-bold md:text-3xl;
+        @apply text-2xl font-medium md:text-3xl;
     }
     h3 {
-        @apply text-2xl font-semibold;
+        @apply text-2xl font-medium;
     }
     h4 {
         @apply text-xl;
@@ -40,5 +44,31 @@
     }
     h6 {
         @apply text-base;
+    }
+
+    code, kbd, pre, time, figcaption {
+        @apply font-mono;
+    }
+
+    :focus-visible {
+        outline: 2px solid rgb(var(--color-custom-pink));
+        outline-offset: 4px;
+    }
+}
+
+@layer components {
+    .engineering-label {
+        @apply font-mono text-sm leading-relaxed text-main/60;
+        letter-spacing: 0.04em;
+    }
+
+    .section-index {
+        @apply mr-3 font-mono text-sm font-normal text-main/50;
+    }
+
+    .hero-title {
+        font-size: clamp(1.875rem, 3.2vw, 2.75rem);
+        line-height: 1.25;
+        max-width: 21ch;
     }
 }

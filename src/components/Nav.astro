@@ -34,7 +34,7 @@ const { showHeader = true } = Astro.props;
                                     </a>
                                 ) : (
                                     <a
-                                        class="font-medium tracking-widest uppercase border-b-2 border-transparent text-main sm:text-lg hover:border-custom-pink"
+                                        class="font-mono font-medium tracking-widest uppercase border-b-2 border-transparent text-main sm:text-lg hover:border-custom-pink"
                                         href={import.meta.env.BASE_URL}
                                         aria-label="Brand"
                                     >
@@ -49,7 +49,7 @@ const { showHeader = true } = Astro.props;
                             <button
                                 id="mobile-menu-button"
                                 type="button"
-                                class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+                                class="group flex items-center rounded-md bg-white/90 px-4 py-2 font-mono text-sm font-medium text-zinc-800 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
                                 aria-label="Toggle navigation"
                             >
                                 Menu
@@ -71,7 +71,7 @@ const { showHeader = true } = Astro.props;
                         <!-- Navigation Links -->
                         <nav class="hidden md:flex md:flex-1 md:justify-center">
                             <ul
-                                class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+                                class="flex rounded-md bg-white/90 px-3 font-mono text-sm font-medium text-zinc-800 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
                             >
                                 {
                                     navLinks.length > 0 &&
@@ -79,7 +79,7 @@ const { showHeader = true } = Astro.props;
                                             <li>
                                                 <NavLink
                                                     href={`${import.meta.env.BASE_URL}${link.href}`}
-                                                    class="block px-3 py-2 transition hover:text-[#ff5470]"
+                                                    class="block px-3 py-2 transition hover:text-custom-pink"
                                                 >
                                                     {link.text}
                                                 </NavLink>
@@ -131,7 +131,7 @@ const { showHeader = true } = Astro.props;
                                         </h2>
                                     </div><nav class="mt-6">
                                         <ul
-                                            class="-my-2 text-sm font-sans md:py-4"
+                                            class="-my-2 text-sm font-mono md:py-4"
                                         >
                                             {
                                                 navLinks.map((link) => (

@@ -15,7 +15,8 @@ module.exports = {
             xl: '1440px',
         },
         fontFamily: {
-            sans: ['Inter', ...defaultTheme.fontFamily.sans],
+            sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
+            mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
             serif: ['Newsreader', ...defaultTheme.fontFamily.serif]
         },
         extend: {
@@ -69,7 +70,7 @@ module.exports = {
                             }
                         },
                         'h1,h2,h3,h4,h5,h6': {
-                            fontFamily: theme('fontFamily.sans'),
+                            fontFamily: theme('fontFamily.mono'),
                             fontWeight: 500
                         },
                         blockquote: {
