@@ -9,50 +9,29 @@ type Props = {
 };
 
 const { project, class: className, headingLevel = "h3" } = Astro.props;
-const { title, description, seo } = project.data;
+const { title, description, seo, publishDate } = project.data;
 const TitleTag = headingLevel;
 ---
 
-<a
-    class:list={[
-        "group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600",
-        className,
-    ]}
-    href={`${import.meta.env.BASE_URL}/projects/${project.slug}/`}
->
-    {
-        seo?.image && (
-            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
-                <img
-                    src={
-                        seo.image.src.startsWith("/")
-                            ? import.meta.env.BASE_URL + seo.image.src
-                            : import.meta.env.BASE_URL + `/${seo.image.src}`
-                    }
-                    alt={seo.image.alt || `Image for ${title}`}
-                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out grayscale"
-                />
-            </div>
-        )
-    }
-    <div class="absolute top-0 inset-x-0 z-10">
-        <div class="p-4 flex flex-col h-full sm:p-6">
-            <!-- Avatar -->
+<a class:list={["project-card group", className]} href={`${import.meta.env.BASE_URL}/projects/${project.slug}/`}>
+    {seo?.image && (
+        <div class="project-image">
+            <img
+                src={`${import.meta.env.BASE_URL}/${seo.image.src.replace(/^\//, "")}`}
+                alt={seo.image.alt || `Image for ${title}`}
+                loading="lazy"
+                decoding="async"
+                width="960"
+                height="540"
+            />
+            <span class="project-image-label eyebrow">Project / {publishDate.getFullYear()}</span>
         </div>
-    </div>
-
-    <div class="absolute bottom-0 inset-x-0 z-10">
-        <div class="flex flex-col h-full p-4 sm:p-6">
-            <TitleTag
-                class="text-lg sm:text-3xl font-semibold text-white group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-custom-pink"
-            >
-                {title}
-            </TitleTag>
-            {
-                description && (
-                    <div class="mt-2 text-white/[.8]">{description}</div>
-                )
-            }
+    )}
+    <div class="project-content">
+        <div class="project-title">
+            <TitleTag>{title}</TitleTag>
+            <ArrowRight class="project-arrow w-5 h-5 fill-current" />
         </div>
+        {description && <p>{description}</p>}
     </div>
 </a>

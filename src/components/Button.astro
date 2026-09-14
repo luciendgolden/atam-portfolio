@@ -8,11 +8,11 @@ type Props = ButtonProps | AnchorProps;
 
 const { href, class: className, variant = 'primary', ...rest } = Astro.props;
 
-const baseClasses = 'px-6 pt-3 pb-3.5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full transition';
+const baseClasses = 'button inline-flex items-center justify-center gap-x-3 text-sm font-medium transition';
 
 const variantClasses = {
-  primary: 'text-white bg-custom-blue hover:bg-custom-pink hover:text-white dark:bg-custom-pink dark:hover:bg-custom-blue dark:text-white',
-  secondary: 'text-main border border-main hover:border-custom-pink hover:text-main',
+  primary: 'button-primary',
+  secondary: 'button-secondary',
 };
 
 const buttonClasses = `${baseClasses} ${variantClasses[variant]}`;

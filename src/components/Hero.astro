@@ -1,70 +1,37 @@
 ---
 import { marked } from "marked";
 import Button from "./Button.astro";
+import StateSpace from "./StateSpace.astro";
+import ArrowRight from "../icons/ArrowRight.astro";
 import siteConfig from "../data/site-config";
 
 const hero = siteConfig.hero;
 ---
 
-{
-    (hero?.title ||
-        hero?.image?.src ||
-        hero?.text ||
-        (hero?.actions && hero.actions.length > 0)) && (
-        <section class="mb-16 sm:mb-24">
-            <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-                {hero.image?.src && (
-                    <div class="lg:pl-20">
-                        <div class="max-w-xs px-2.5 lg:max-w-none">
-                            <img
-                                alt={hero.image.alt || ""}
-                                loading="lazy"
-                                width="800"
-                                height="800"
-                                decoding="async"
-                                data-nimg="1"
-                                class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                                sizes="(min-width: 1024px) 32rem, 20rem"
-                                src={`${import.meta.env.BASE_URL}${hero.image.src}`}
-                                style="color: transparent;"
-                            />
-                            {hero.image.caption && (
-                                <figcaption class="mt-1.5 text-xs sm:text-sm">
-                                    {hero.image.caption}
-                                </figcaption>
-                            )}
-                        </div>
-                    </div>
-                )}
-                <div class="lg:order-first lg:row-span-2">
-                    {hero.title && <h1>{hero.title}</h1>}
-                    {hero.text && (
-                        <div
-                            class="mt-6 space-y-7 max-w-none sm:prose-lg"
-                            set:html={marked.parse(hero.text)}
-                        />
-                    )}
-                    {hero.actions && hero.actions.length > 0 && (
-                        <div class="mt-6 flex flex-col sm:flex-row sm:items-center flex-wrap gap-4">
-                            {hero.actions.map((action) => (
-                                <Button
-                                    variant="primary"
-                                    href={`${import.meta.env.BASE_URL}${action.href}`}
-                                    class="w-full sm:w-auto"
-                                >
-                                    {action.text}
-                                </Button>
-                            ))}
-                            <Button
-                                variant="secondary"
-                                class="w-full sm:w-auto"
-                            >
-                                Secondary Button
-                            </Button>
-                        </div>
-                    )}
+{hero && (
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-layout">
+            <div>
+                <p class="eyebrow">{siteConfig.title} / Personal portfolio</p>
+                {hero.title && <h1 id="hero-title">{hero.title.split("\n").map((line) => <span>{line}</span>)}</h1>}
+                {hero.text && <div class="hero-copy" set:html={marked.parse(hero.text)} />}
+                <div class="hero-actions">
+                    <Button href={`${import.meta.env.BASE_URL}/projects`}>
+                        Explore projects <ArrowRight class="w-4 h-4 fill-current" />
+                    </Button>
+                    {hero.actions?.map((action) => (
+                        <a class="text-link" href={`${import.meta.env.BASE_URL}${action.href}`}>
+                            {action.text} <span aria-hidden="true">↗</span>
+                        </a>
+                    ))}
                 </div>
             </div>
-        </section>
-    )
-}
+            <StateSpace />
+        </div>
+        <div class="hero-disciplines" aria-label="Areas of interest">
+            <span><span class="discipline-index" aria-hidden="true">01 /</span> Computer science</span>
+            <span><span class="discipline-index" aria-hidden="true">02 /</span> Machine learning</span>
+            <span><span class="discipline-index" aria-hidden="true">03 /</span> Robotics</span>
+        </div>
+    </section>
+)}

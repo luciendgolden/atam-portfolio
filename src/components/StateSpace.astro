@@ -1,0 +1,60 @@
+---
+// An illustrative parametric trajectory, projected onto an isometric coordinate system.
+const project = (x: number, y: number, z: number) => ({
+    x: 248 + (x - y) * .82,
+    y: 258 + (x + y) * .34 - z,
+});
+const coordinate = (point: { x: number; y: number }) => `${point.x.toFixed(2)},${point.y.toFixed(2)}`;
+const trajectory = (t: number) => {
+    const radius = 104 - t * 7;
+    return project(Math.cos(t) * radius, Math.sin(t) * radius, 30 + t * 19);
+};
+const steps = Array.from({ length: 181 }, (_, i) => trajectory(i / 180 * Math.PI * 2));
+const grid = [-120, -80, -40, 0, 40, 80, 120];
+const pointCloud = Array.from({ length: 300 }, (_, i) => {
+    const t = i / 299 * Math.PI * 2;
+    const offset = Math.sin(i * 2.399) * 23;
+    const radius = 104 - t * 7 + offset;
+    return project(Math.cos(t) * radius, Math.sin(t) * radius, 30 + t * 19 + Math.cos(i * 1.73) * 17);
+});
+const origin = project(0, 0, 0);
+const end = steps[steps.length - 1];
+---
+
+<figure class="state-space">
+    <div class="figure-heading eyebrow"><span>Intelligent systems</span><span>Fig. 01</span></div>
+    <svg viewBox="0 0 496 350" role="img" aria-labelledby="state-space-title state-space-description">
+        <title id="state-space-title">From observation to a learned trajectory</title>
+        <desc id="state-space-description">An illustrative three-dimensional state space. A cloud of observations surrounds a smooth ascending spiral, connecting perception, learning, and action.</desc>
+        <g class="plot-grid">
+            {grid.map((value) => <>
+                <polyline points={`${coordinate(project(-120, value, 0))} ${coordinate(project(120, value, 0))}`} />
+                <polyline points={`${coordinate(project(value, -120, 0))} ${coordinate(project(value, 120, 0))}`} />
+            </>)}
+        </g>
+        <g class="plot-axis">
+            <polyline points={`${coordinate(project(-140, 0, 0))} ${coordinate(project(155, 0, 0))}`} />
+            <polyline points={`${coordinate(project(0, -140, 0))} ${coordinate(project(0, 155, 0))}`} />
+            <polyline points={`${coordinate(origin)} ${coordinate(project(0, 0, 215))}`} />
+        </g>
+        <g class="plot-label">
+            <text x="385" y="316">x</text><text x="108" y="316">y</text><text x="256" y="49">z</text>
+            <text x="24" y="32">STATE SPACE</text><text x="24" y="329">3D / PROJECTION</text>
+        </g>
+        <g class="plot-orbit">
+            {[0, 1, 2, 3].map((layer) => <polyline points={Array.from({ length: 65 }, (_, i) => {
+                const t = i / 64 * Math.PI * 2;
+                return coordinate(project(Math.cos(t) * (104 - layer * 12), Math.sin(t) * (104 - layer * 12), 30 + layer * 36));
+            }).join(" ")} />)}
+        </g>
+        <g class="plot-point">
+            {pointCloud.map((point, i) => <circle cx={point.x} cy={point.y} r={i % 5 === 0 ? 1.8 : 1.2} opacity={.2 + (i % 4) * .16} />)}
+        </g>
+        <polyline class="plot-trajectory" points={steps.map(coordinate).join(" ")} />
+        <circle class="plot-marker" cx={steps[0].x} cy={steps[0].y} r="4" />
+        <circle class="plot-marker" cx={end.x} cy={end.y} r="4" />
+        <path class="plot-axis" d={`M${end.x + 8},${end.y} H405`} stroke-dasharray="3 4" />
+        <text class="plot-label" x="350" y={end.y - 10}>trajectory</text>
+    </svg>
+    <figcaption class="figure-caption"><span>Perception → learning → action</span><span aria-hidden="true">[ x, y, z ]</span></figcaption>
+</figure>
