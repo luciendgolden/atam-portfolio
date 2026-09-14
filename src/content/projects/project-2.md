@@ -5,8 +5,8 @@ publishDate: 'Oct 2 2023'
 isFeatured: true
 seo:
   image:
-    src: '/project-2.jpg'
-    alt: Project preview
+    src: '/models/harmonic-trajectory.svg'
+    alt: 'A three-dimensional Lissajous trajectory formed by harmonic motion'
 ---
 
 

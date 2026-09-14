@@ -5,7 +5,8 @@ publishDate: 'Jan 10 2024'
 isFeatured: true
 seo:
   image:
-    src: 'project-7.jpg'
+    src: '/models/lorenz-attractor.svg'
+    alt: 'A Lorenz attractor illustrating deterministic chaos'
 ---
 
 ## Heading 2
@@ -23,7 +24,7 @@ CryptoTrader Dashboard is a comprehensive web application designed to empower cr
 2. Provide tools for users to analyze market trends, track their portfolio performance, and make informed investment decisions.
 3. Create a secure and efficient platform that ensures users have a holistic view of their cryptocurrency holdings.
 
-![Project preview](/project-7.jpg)
+![A Lorenz attractor illustrating deterministic chaos](/models/lorenz-attractor.svg)
 
 ## Features
 

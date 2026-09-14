@@ -4,8 +4,8 @@ description: EcoBuddy is a mobile app that gamifies sustainable living. Users ca
 publishDate: 'Jan 02 2024'
 seo:
   image:
-    src: '/project-1.jpg'
-    alt: Project preview
+    src: '/models/gradient-descent.svg'
+    alt: 'Gradient descent along the contours of a quadratic loss function'
 ---
 
 **Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).

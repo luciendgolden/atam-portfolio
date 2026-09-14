@@ -4,7 +4,8 @@ description: This web application encourages users to embark on thrilling advent
 publishDate: 'Dec 28 2023'
 seo:
   image:
-    src: '/project-6.jpg'
+    src: '/models/torus-manifold.svg'
+    alt: 'A parametric torus illustrating a periodic manifold'
 ---
 
 

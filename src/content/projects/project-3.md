@@ -5,7 +5,8 @@ publishDate: 'Oct 12 2023'
 isFeatured: true
 seo:
   image:
-    src: '/project-3.jpg'
+    src: '/models/gaussian-surface.svg'
+    alt: 'A wireframe of a bivariate Gaussian bell surface'
 ---
 
 

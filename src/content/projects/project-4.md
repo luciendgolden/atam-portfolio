@@ -4,7 +4,8 @@ description: Leveraging advanced algorithms and machine learning, NeuralPlaylist
 publishDate: 'Oct 19 2023'
 seo:
   image:
-    src: '/project-4.jpg'
+    src: '/models/fourier-series.svg'
+    alt: 'Sinusoidal harmonics and their combined Fourier series'
 ---
 
 

@@ -5,7 +5,8 @@ publishDate: 'Oct 25 2023'
 isFeatured: true
 seo:
   image:
-    src: '/project-5.jpg'
+    src: '/models/saddle-surface.svg'
+    alt: 'A wireframe of a hyperbolic paraboloid with a saddle point'
 ---
 
 
