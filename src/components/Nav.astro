@@ -36,7 +36,7 @@ const { showHeader = true } = Astro.props;
                                     <a
                                         class="font-mono font-medium tracking-widest uppercase border-b-2 border-transparent text-main sm:text-lg hover:border-custom-pink"
                                         href={import.meta.env.BASE_URL}
-                                        aria-label="Brand"
+                                        aria-label="Zur Startseite"
                                     >
                                         {siteConfig.title}
                                     </a>
@@ -49,10 +49,10 @@ const { showHeader = true } = Astro.props;
                             <button
                                 id="mobile-menu-button"
                                 type="button"
-                                class="group flex items-center rounded-md bg-main px-4 py-2 font-mono text-sm font-medium text-main ring-1 ring-black/10 transition-colors hover:bg-custom-pink/10 hover:ring-custom-pink/40 dark:ring-white/10"
-                                aria-label="Toggle navigation"
+                                class="group flex items-center rounded-md bg-main px-4 py-2 font-mono text-sm font-normal text-main ring-1 ring-black/10 transition-colors hover:bg-custom-pink/10 hover:ring-custom-pink/40 dark:ring-white/10"
+                                aria-label="Navigation öffnen"
                             >
-                                Menu
+                                Menü
                                 <svg
                                     viewBox="0 0 8 6"
                                     aria-hidden="true"
@@ -71,7 +71,7 @@ const { showHeader = true } = Astro.props;
                         <!-- Navigation Links -->
                         <nav class="hidden md:flex md:flex-1 md:justify-center">
                             <ul
-                                class="flex gap-1 rounded-lg bg-main p-1 font-mono text-sm font-medium ring-1 ring-black/10 dark:ring-white/10"
+                                class="flex gap-1 rounded-lg bg-main p-1 font-mono text-sm font-normal ring-1 ring-black/10 dark:ring-white/10"
                             >
                                 {
                                     navLinks.length > 0 &&
@@ -108,7 +108,7 @@ const { showHeader = true } = Astro.props;
                                             id="mobile-menu-close-button"
                                             type="button"
                                             class="-m-1 rounded-md p-1 transition-colors hover:bg-custom-pink/10"
-                                            aria-label="Close menu"
+                                            aria-label="Menü schließen"
                                         >
                                             <svg
                                                 viewBox="0 0 24 24"

@@ -1,14 +1,12 @@
 ---
-title: Get in touch
+title: Kontakt
 seo:
-  title: Contact
-  description: Get in touch through email or social media! Let me know how I can help.
+  title: Kontakt
+  description: Austausch über angewandte KI, maschinelles Lernen, Robotik und die Entwicklung nachvollziehbarer technischer Systeme.
 ---
 
-Thank you for reaching out! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:
+Du möchtest dich über ein technisches Problem, eine Projektidee oder einen der Beiträge austauschen? Besonders interessieren mich Anwendungen an der Schnittstelle von Softwareentwicklung, maschinellem Lernen und Robotik.
 
-_Email:_
-Feel free to drop me an email at [example@example.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
+Hilfreich sind eine kurze Beschreibung der Aufgabe, der aktuelle Stand und die Frage, bei der du Unterstützung suchst. So lässt sich schnell erkennen, welche technischen Schritte sinnvoll wären.
 
-_Social Media:_
-Connect with me on social media as well. Find me on [Twitter](https://twitter.com) or [LinkedIn](https://www.linkedin.com/).
+**Die Kontaktadresse wird hier ergänzt.**

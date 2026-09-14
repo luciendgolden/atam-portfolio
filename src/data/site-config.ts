@@ -43,23 +43,23 @@ const siteConfig: SiteConfig = {
     logo: {
         src: '/about.jpeg',
         alt: 'logo',
-        caption: 'Portfolio and blog theme'
+        caption: 'Designvorlage für Portfolio und Blog'
     },
     */
     title: 'Tampier',
-    subtitle: 'AI engineering / Applied machine learning',
-    description: 'Tampier — hands-on projects and notes on AI engineering, machine learning, and robotics.',
+    subtitle: 'Angewandte KI / Maschinelles Lernen / Robotik',
+    description: 'Tampier – technische Beiträge und Projektkonzepte zu KI-Engineering, maschinellem Lernen und Robotik.',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/hero.jpeg',
+        alt: 'Alexander Tampier in einem Café'
     },
     headerNavLinks: [
         {
-            text: 'Home',
+            text: 'Start',
             href: '/'
         },
         {
-            text: 'Projects',
+            text: 'Projekte',
             href: '/projects'
         },
         {
@@ -67,17 +67,17 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Tags',
+            text: 'Themen',
             href: '/tags'
         },
         {
-            text: 'Contact',
+            text: 'Kontakt',
             href: '/contact'
         }
     ],
     footerNavLinks: [
         {
-            text: 'Terms',
+            text: 'Nutzungsbedingungen',
             href: '/terms'
         },
     ],
@@ -104,23 +104,23 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'AI engineering, put into practice.',
-        text: 'I turn ideas into working software, with a focus on **applied AI, machine learning, and robotics**. I care about the engineering behind a useful system: building it, evaluating how it behaves, and improving it through hands-on experimentation. Here you’ll find my projects, technical notes, and what I learn along the way.',
+        title: 'KI-Engineering in der Praxis.',
+        text: 'Mich interessiert, wie aus einer Idee ein nachvollziehbares technisches System wird. Mein Fokus liegt auf **angewandter KI, maschinellem Lernen und Robotik**: Daten verstehen, Modelle sinnvoll einsetzen und ihr Verhalten gezielt prüfen. Hier findest du technische Beiträge und ausgearbeitete Projektkonzepte.',
         image: {
             src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer',
-            caption: 'Photo by Marjana J.T'
+            alt: 'Alexander Tampier in einem Café',
+            caption: 'Foto von Marjana J.T'
         },
         actions: [
             {
-                text: 'Get in Touch',
+                text: 'Kontakt aufnehmen',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        title: 'Neue Beiträge per E-Mail',
+        text: 'Technische Notizen und neue Projektideen direkt in dein Postfach.',
         formUrl: '#'
     },
     postsPerPage: 6,

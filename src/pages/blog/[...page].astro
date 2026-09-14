@@ -21,11 +21,11 @@ const blog = page.data;
 
 <BaseLayout
     title="Blog"
-    description="Embark on a journey of personal insights and experiences through my blog"
-    image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
+    description="Praxisnahe Beiträge zu KI-Systemen, Modellevaluation und den technischen Grundlagen mobiler Robotik."
+    image={siteConfig.image}
     showHeader={false}
 >
-    <h1 class="mb-12 text-2xl leading-tight font-mono sm:mb-16 sm:text-4xl">Blog Archive</h1>
+    <h1 class="mb-12 text-2xl leading-tight font-mono sm:mb-16 sm:text-4xl">Technische Beiträge</h1>
     {blog.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>

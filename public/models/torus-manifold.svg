@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
-<title id="title">Periodic manifold</title>
-<desc id="description">A parametric torus shown as a wireframe, illustrating a periodic two-dimensional manifold embedded in three dimensions.</desc>
+<title id="title">Periodische Mannigfaltigkeit</title>
+<desc id="description">Parametrischer Torus als Drahtgitter: eine periodische zweidimensionale Mannigfaltigkeit im dreidimensionalen Raum.</desc>
 <defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/></pattern></defs>
 <rect width="1000" height="700" fill="#1b191e"/>
 <rect width="1000" height="700" fill="url(#grid)"/>

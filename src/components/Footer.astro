@@ -13,7 +13,7 @@ const navLinks = siteConfig.footerNavLinks || [];
             <a
                 class="font-mono font-medium tracking-widest uppercase border-b-2 border-transparent sm:text-lg hover:border-custom-pink"
                 href={`${import.meta.env.BASE_URL}/`}
-                aria-label="Brand"
+                aria-label="Zur Startseite"
             >
                 {siteConfig.title}
             </a>
@@ -49,6 +49,7 @@ const navLinks = siteConfig.footerNavLinks || [];
                         <a
                             class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-main/65 transition-colors hover:border-custom-pink/20 hover:bg-custom-pink/10 hover:text-main disabled:opacity-50 disabled:pointer-events-none"
                             href={`${import.meta.env.BASE_URL}${link.href}`}
+                            aria-label={link.text}
                         >
                             {link.icon && <Fragment set:html={ iconMap[link.icon] } />}
                         </a>

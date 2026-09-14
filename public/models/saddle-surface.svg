@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
-<title id="title">Saddle surface</title>
-<desc id="description">A wireframe of the hyperbolic paraboloid z = 0.35(x squared minus y squared), illustrating a saddle point.</desc>
+<title id="title">Sattelfläche</title>
+<desc id="description">Drahtgitter eines hyperbolischen Paraboloids mit z = 0,35 mal (x zum Quadrat minus y zum Quadrat).</desc>
 <defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/></pattern></defs>
 <rect width="1000" height="700" fill="#1b191e"/>
 <rect width="1000" height="700" fill="url(#grid)"/>

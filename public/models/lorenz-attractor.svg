@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
-<title id="title">Lorenz attractor</title>
-<desc id="description">A Lorenz attractor with sigma = 10, rho = 28 and beta = 8/3, integrated using fourth-order Runge-Kutta. An illustration of deterministic chaos.</desc>
+<title id="title">Lorenz-Attraktor</title>
+<desc id="description">Lorenz-Attraktor mit Sigma = 10, Rho = 28 und Beta = 8/3, integriert mit dem Runge-Kutta-Verfahren vierter Ordnung. Darstellung deterministischen Chaos.</desc>
 <defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/></pattern></defs>
 <rect width="1000" height="700" fill="#1b191e"/>
 <rect width="1000" height="700" fill="url(#grid)"/>

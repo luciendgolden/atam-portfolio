@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
-<title id="title">Gaussian surface</title>
-<desc id="description">A wireframe of a bivariate Gaussian bell surface, illustrating a smooth concentration around its center.</desc>
+<title id="title">Gaußsche Glockenfläche</title>
+<desc id="description">Drahtgitter einer zweidimensionalen Gaußfunktion mit glatter Konzentration um ihr Zentrum.</desc>
 <defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/></pattern></defs>
 <rect width="1000" height="700" fill="#1b191e"/>
 <rect width="1000" height="700" fill="url(#grid)"/>

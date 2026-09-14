@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
-<title id="title">Fourier superposition</title>
-<desc id="description">Odd sinusoidal harmonics and their Fourier partial sum, illustrating the approximation of a square wave.</desc>
+<title id="title">Fourier-Überlagerung</title>
+<desc id="description">Ungerade sinusförmige Harmonische und ihre Fourier-Partialsumme zur Annäherung an eine Rechteckschwingung.</desc>
 <defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/></pattern></defs>
 <rect width="1000" height="700" fill="#1b191e"/>
 <rect width="1000" height="700" fill="url(#grid)"/>

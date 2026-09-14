@@ -2,10 +2,16 @@
 
 ---
 
-<button id="theme-toggle" class="inline-flex size-9 items-center justify-center rounded-md transition-colors hover:bg-custom-pink/10 hover:text-custom-pink" aria-label="Change color scheme">
-    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="8" cy="8" r="8"></circle>
+<button id="theme-toggle" type="button" class="inline-flex size-11 items-center justify-center rounded-full border border-main/10 bg-main text-main transition-colors duration-200 hover:border-custom-pink/40 hover:bg-custom-pink/10 hover:text-custom-pink dark:bg-muted dark:hover:bg-custom-pink/10">
+    <svg class="size-[18px] dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path>
     </svg>
+    <svg class="hidden size-[18px] dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="3.5"></circle>
+        <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+    </svg>
+    <span class="sr-only dark:hidden">Dunklen Modus aktivieren</span>
+    <span class="sr-only hidden dark:inline">Hellen Modus aktivieren</span>
 </button>
 
 <script>
