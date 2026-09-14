@@ -10,7 +10,6 @@
         --color-bg-muted: 36 36 36; /* #242424 */
         --color-border-main: 23 23 23; /* #171717 */
         --color-bg-accent: var(--color-custom-pink);
-        --color-custom-blue: 27 45 69;
         --color-custom-pink: 255 84 112;
     }
     html.dark {
@@ -19,7 +18,6 @@
         --color-bg-muted: 36 36 36; /* #242424 */
         --color-border-main: 242 241 236; /* #F2F1EC */
         --color-bg-accent: var(--color-custom-pink);
-        --color-custom-blue: 27 45 69;
         --color-custom-pink: 255 84 112;
     }
 
@@ -57,13 +55,17 @@
 }
 
 @layer components {
+    .article-content a {
+        @apply underline decoration-custom-pink decoration-dashed underline-offset-4 hover:decoration-solid;
+    }
+
     .engineering-label {
-        @apply font-mono text-sm leading-relaxed text-main/60;
+        @apply border-l-2 border-custom-pink pl-3 font-mono text-sm leading-relaxed text-main/65;
         letter-spacing: 0.04em;
     }
 
     .section-index {
-        @apply mr-3 font-mono text-sm font-normal text-main/50;
+        @apply mr-3 rounded-md border border-custom-pink/20 bg-custom-pink/10 px-2 py-1 font-mono text-xs font-normal text-main/70;
     }
 
     .hero-title {

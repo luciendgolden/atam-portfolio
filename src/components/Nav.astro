@@ -49,7 +49,7 @@ const { showHeader = true } = Astro.props;
                             <button
                                 id="mobile-menu-button"
                                 type="button"
-                                class="group flex items-center rounded-md bg-white/90 px-4 py-2 font-mono text-sm font-medium text-zinc-800 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+                                class="group flex items-center rounded-md bg-main px-4 py-2 font-mono text-sm font-medium text-main ring-1 ring-black/10 transition-colors hover:bg-custom-pink/10 hover:ring-custom-pink/40 dark:ring-white/10"
                                 aria-label="Toggle navigation"
                             >
                                 Menu
@@ -71,7 +71,7 @@ const { showHeader = true } = Astro.props;
                         <!-- Navigation Links -->
                         <nav class="hidden md:flex md:flex-1 md:justify-center">
                             <ul
-                                class="flex rounded-md bg-white/90 px-3 font-mono text-sm font-medium text-zinc-800 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+                                class="flex gap-1 rounded-lg bg-main p-1 font-mono text-sm font-medium ring-1 ring-black/10 dark:ring-white/10"
                             >
                                 {
                                     navLinks.length > 0 &&
@@ -79,7 +79,7 @@ const { showHeader = true } = Astro.props;
                                             <li>
                                                 <NavLink
                                                     href={`${import.meta.env.BASE_URL}${link.href}`}
-                                                    class="block px-3 py-2 transition hover:text-custom-pink"
+                                                    class="block px-3 py-2"
                                                 >
                                                     {link.text}
                                                 </NavLink>
@@ -99,7 +99,7 @@ const { showHeader = true } = Astro.props;
                             >
                                 <div
                                     id="mobile-menu-content"
-                                    class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+                                    class="fixed inset-x-4 top-8 z-50 origin-top rounded-xl bg-main p-8 ring-1 ring-custom-pink/20"
                                 >
                                     <div
                                         class="flex flex-row-reverse items-center justify-between"
@@ -107,7 +107,7 @@ const { showHeader = true } = Astro.props;
                                         <button
                                             id="mobile-menu-close-button"
                                             type="button"
-                                            class="-m-1 p-1"
+                                            class="-m-1 rounded-md p-1 transition-colors hover:bg-custom-pink/10"
                                             aria-label="Close menu"
                                         >
                                             <svg
@@ -136,12 +136,12 @@ const { showHeader = true } = Astro.props;
                                             {
                                                 navLinks.map((link) => (
                                                     <li>
-                                                        <a
-                                                            class="block py-2"
+                                                        <NavLink
+                                                            class="block px-3 py-2.5"
                                                             href={`${import.meta.env.BASE_URL}${link.href}`}
                                                         >
                                                             {link.text}
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                 ))
                                             }

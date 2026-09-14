@@ -15,14 +15,14 @@ const TitleTag = headingLevel;
 
 <a
     class:list={[
-        "group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600",
+        "group relative block rounded-xl ring-2 ring-transparent transition-shadow duration-300 ease-in-out hover:ring-custom-pink/60",
         className,
     ]}
     href={`${import.meta.env.BASE_URL}/projects/${project.slug}/`}
 >
     {
         seo?.image && (
-            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-zinc-950/80 before:z-[1]">
                 <img
                     src={
                         seo.image.src.startsWith("/")
@@ -44,7 +44,7 @@ const TitleTag = headingLevel;
     <div class="absolute bottom-0 inset-x-0 z-10">
         <div class="flex flex-col h-full p-4 sm:p-6">
             <TitleTag
-                class="text-lg sm:text-3xl font-semibold text-white group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-custom-pink"
+                class="text-lg sm:text-3xl font-semibold text-white underline decoration-dashed underline-offset-4 decoration-transparent transition-colors duration-300 ease-in-out group-hover:decoration-custom-pink"
             >
                 {title}
             </TitleTag>

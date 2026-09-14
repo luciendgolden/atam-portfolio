@@ -21,7 +21,6 @@ module.exports = {
         },
         extend: {
             colors: {
-                'custom-blue': 'rgb(var(--color-custom-blue) / <alpha-value>)',
                 'custom-pink': 'rgb(var(--color-custom-pink) / <alpha-value>)',
             },
             textColor: {
