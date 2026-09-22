@@ -21,15 +21,16 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-2xl font-semibold tracking-tight">
-                    Projects
+                    <span class="section-index" aria-hidden="true">01 /</span>
+                    Projektkonzepte
                 </h2>
-                <div class="grid lg:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                     {featuredProjects.map((project) => (
                         <ProjectPreview project={project} headingLevel="h3" />
                     ))}
                 </div>
                 <div class="mt-12">
-                    <Button href={`${import.meta.env.BASE_URL}/projects`}>View All Projects</Button>
+                    <Button href={`${import.meta.env.BASE_URL}/projects`}>Alle Projekte ansehen</Button>
                 </div>
             </div>
         )
@@ -38,7 +39,8 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-2xl font-semibold tracking-tight">
-                    Posts
+                    <span class="section-index" aria-hidden="true">02 /</span>
+                    Technische Beiträge
                 </h2>
                 <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
                     {featuredPosts.map((post) => (
@@ -46,7 +48,7 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
                     ))}
                 </div>
                 <div class="mt-12">
-                    <Button href={`${import.meta.env.BASE_URL}/blog`}>View All Posts</Button>
+                    <Button href={`${import.meta.env.BASE_URL}/blog`}>Alle Beiträge lesen</Button>
                 </div>
             </div>
         )

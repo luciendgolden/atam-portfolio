@@ -23,7 +23,7 @@ const hero = siteConfig.hero;
                                 height="800"
                                 decoding="async"
                                 data-nimg="1"
-                                class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                                class="aspect-square rounded-xl border border-main/10 bg-zinc-100 object-cover dark:bg-zinc-800"
                                 sizes="(min-width: 1024px) 32rem, 20rem"
                                 src={`${import.meta.env.BASE_URL}${hero.image.src}`}
                                 style="color: transparent;"
@@ -37,7 +37,8 @@ const hero = siteConfig.hero;
                     </div>
                 )}
                 <div class="lg:order-first lg:row-span-2">
-                    {hero.title && <h1>{hero.title}</h1>}
+                    {siteConfig.subtitle && <p class="engineering-label mb-5">{siteConfig.subtitle}</p>}
+                    {hero.title && <h1 class="hero-title">{hero.title}</h1>}
                     {hero.text && (
                         <div
                             class="mt-6 space-y-7 max-w-none sm:prose-lg"
@@ -57,9 +58,10 @@ const hero = siteConfig.hero;
                             ))}
                             <Button
                                 variant="secondary"
+                                href={`${import.meta.env.BASE_URL}/projects`}
                                 class="w-full sm:w-auto"
                             >
-                                Secondary Button
+                                Projekte ansehen
                             </Button>
                         </div>
                     )}

@@ -6,14 +6,14 @@ const socialLinks = siteConfig.socialLinks || [];
 const navLinks = siteConfig.footerNavLinks || [];
 ---
 
-<footer class="mt-auto w-full max-w-[85rem] py-10 mx-auto">
+<footer class="mt-auto w-full max-w-[85rem] border-t border-main/10 py-10 mx-auto">
     <!-- Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
         <div class="inline-flex items-center">
             <a
-                class="text-xl font-semibold"
+                class="font-mono font-medium tracking-widest uppercase border-b-2 border-transparent sm:text-lg hover:border-custom-pink"
                 href={`${import.meta.env.BASE_URL}/`}
-                aria-label="Brand"
+                aria-label="Zur Startseite"
             >
                 {siteConfig.title}
             </a>
@@ -30,7 +30,7 @@ const navLinks = siteConfig.footerNavLinks || [];
                     {navLinks.map((link) => (
                         <li class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
                             <a
-                                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200"
+                                class="inline-flex gap-x-2 font-mono text-sm text-main/65 decoration-custom-pink underline-offset-4 hover:text-main hover:underline"
                                 href={`${import.meta.env.BASE_URL}${link.href}`}
                             >
                                 {link.text}
@@ -47,8 +47,9 @@ const navLinks = siteConfig.footerNavLinks || [];
                 <div class="md:text-end space-x-2">
                     {socialLinks.map((link) => (
                         <a
-                            class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700"
+                            class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-main/65 transition-colors hover:border-custom-pink/20 hover:bg-custom-pink/10 hover:text-main disabled:opacity-50 disabled:pointer-events-none"
                             href={`${import.meta.env.BASE_URL}${link.href}`}
+                            aria-label={link.text}
                         >
                             {link.icon && <Fragment set:html={ iconMap[link.icon] } />}
                         </a>
