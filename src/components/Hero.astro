@@ -25,7 +25,7 @@ const hero = siteConfig.hero;
                                 data-nimg="1"
                                 class="aspect-square rounded-xl border border-main/10 bg-zinc-100 object-cover dark:bg-zinc-800"
                                 sizes="(min-width: 1024px) 32rem, 20rem"
-                                src={hero.image.src}
+                                src={`${import.meta.env.BASE_URL}${hero.image.src}`}
                                 style="color: transparent;"
                             />
                             {hero.image.caption && (
@@ -50,7 +50,7 @@ const hero = siteConfig.hero;
                             {hero.actions.map((action) => (
                                 <Button
                                     variant="primary"
-                                    href={action.href}
+                                    href={`${import.meta.env.BASE_URL}${action.href}`}
                                     class="w-full sm:w-auto"
                                 >
                                     {action.text}
@@ -58,7 +58,7 @@ const hero = siteConfig.hero;
                             ))}
                             <Button
                                 variant="secondary"
-                                href={`/projects`}
+                                href={`${import.meta.env.BASE_URL}/projects`}
                                 class="w-full sm:w-auto"
                             >
                                 Projekte ansehen

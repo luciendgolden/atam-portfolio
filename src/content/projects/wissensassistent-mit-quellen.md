@@ -37,4 +37,4 @@ Ein besonders wichtiger Fehlerfall: Das richtige Dokument wird gefunden, aber di
 
 Vorgesehen sind ein kleiner Demonstrator, ein reproduzierbarer Fragenkatalog und ein Auswertungsbericht mit konkreten Fehlerbeispielen.
 
-Zum Vorgehen passt der Beitrag [Vom KI-Prototyp zum belastbaren System](/blog/ki-prototyp-zum-system/).
+Zum Vorgehen passt der Beitrag [Vom KI-Prototyp zum belastbaren System](/atam-portfolio/blog/ki-prototyp-zum-system/).

@@ -78,7 +78,7 @@ const { showHeader = true } = Astro.props;
                                         navLinks.map((link) => (
                                             <li>
                                                 <NavLink
-                                                    href={link.href}
+                                                    href={`${import.meta.env.BASE_URL}${link.href}`}
                                                     class="block px-3 py-2"
                                                 >
                                                     {link.text}
@@ -138,7 +138,7 @@ const { showHeader = true } = Astro.props;
                                                     <li>
                                                         <NavLink
                                                             class="block px-3 py-2.5"
-                                                            href={link.href}
+                                                            href={`${import.meta.env.BASE_URL}${link.href}`}
                                                         >
                                                             {link.text}
                                                         </NavLink>

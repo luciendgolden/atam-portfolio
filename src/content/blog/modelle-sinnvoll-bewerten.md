@@ -38,4 +38,4 @@ Nach der Gesamtauswertung lohnt sich die Aufteilung nach Beleuchtung, Perspektiv
 
 Der Entscheidungsschwellenwert wird mit Validierungsdaten gewählt. Erst danach folgt die abschließende Prüfung auf zurückgehaltenen Testdaten. Ein brauchbarer Ergebnisbericht nennt daher nicht nur Kennzahlen, sondern auch Datenaufteilung, Fallzahlen, Schwellenwert und typische Fehlentscheidungen.
 
-Diese Überlegungen sind Teil des [Beispielkonzepts zur visuellen Qualitätsprüfung](/projects/visuelle-qualitaetspruefung/).
+Diese Überlegungen sind Teil des [Beispielkonzepts zur visuellen Qualitätsprüfung](/atam-portfolio/projects/visuelle-qualitaetspruefung/).

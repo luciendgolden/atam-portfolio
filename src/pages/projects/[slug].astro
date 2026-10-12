@@ -50,8 +50,8 @@ const { Content } = await project.render();
                         class="max-w-none object-cover rounded-xl w-full h-96 sm:h-144 md:h-192 lg:h-256 xl:h-320"
                         src={
                             seo.image.src.startsWith("/")
-                                ? seo.image.src
-                                : `/${seo.image.src}`
+                                ? import.meta.env.BASE_URL + seo.image.src
+                                : import.meta.env.BASE_URL + `/${seo.image.src}`
                         }
                         alt={seo.image.alt}
                     />

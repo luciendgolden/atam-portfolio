@@ -40,4 +40,4 @@ Neben der fachlichen Qualität gehören Laufzeit und Ressourcenverbrauch in den 
 
 Eine nützliche erste Lieferung besteht aus einem Demonstrator, einem kleinen Testkatalog und einem Fehlerbericht. Der Bericht erklärt, welche Fälle funktionieren, welche scheitern und welche Änderung als Nächstes geprüft werden soll. Das macht den nächsten Entwicklungsschritt nachvollziehbar.
 
-Ein passendes Beispiel ist das [Projektkonzept für einen Wissensassistenten](/projects/wissensassistent-mit-quellen/).
+Ein passendes Beispiel ist das [Projektkonzept für einen Wissensassistenten](/atam-portfolio/projects/wissensassistent-mit-quellen/).

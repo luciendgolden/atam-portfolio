@@ -8,12 +8,12 @@ export async function GET(context) {
     return rss({
         title: siteConfig.title,
         description: siteConfig.description,
-        site: context.site,
+        site: new URL(`${import.meta.env.BASE_URL}/`, context.site),
         customData: '<language>de-AT</language>',
         items: posts.map((item) => ({
             title: item.data.title,
             description: item.data.excerpt,
-            link: `/blog/${item.slug}/`,
+            link: `${import.meta.env.BASE_URL}/blog/${item.slug}/`,
             pubDate: item.data.publishDate.setUTCHours(0)
         }))
     });
