@@ -1,52 +1,54 @@
 ---
-title: Terms of Service
+title: Nutzungsbedingungen
 seo:
-  title: Terms of Service
-  description: Explore the terms and conditions of Dante website for a clear understanding of guidelines and responsibilities.
+  title: Nutzungsbedingungen
+  description: Deutsche Fassung der vorhandenen Nutzungsvorlage mit Angaben zur Verwendung der Website, zu Inhalten und Verantwortlichkeiten.
 ---
 
-**Last updated on January 11, 2024**
+**Vorlage: Angaben zum Betreiber und zur Rechtsordnung sind noch zu ergänzen.**
 
-These Terms of Service ("Terms") govern your access to and use of [Website Name] ("the Website") and any related services provided by [Website Owner/Company] ("we," "us," or "our"). Please read these Terms carefully before using the Website.
+**Stand der ursprünglichen Vorlage: 11. Jänner 2024**
 
-**1. Acceptance of Terms**
+Diese Nutzungsbedingungen regeln den Zugang zu und die Nutzung von [Name der Website] sowie der damit verbundenen Leistungen von [Name des Betreibers oder Unternehmens]. Bitte lies diese Bedingungen vor der Nutzung der Website.
 
-By accessing or using the Website, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms or the Privacy Policy, please do not use the Website.
+## 1. Zustimmung zu den Bedingungen
 
-**2. Changes to Terms**
+Mit dem Zugriff auf die Website oder ihrer Nutzung erklärst du dich mit diesen Nutzungsbedingungen und der Datenschutzerklärung einverstanden. Wenn du ihnen nicht zustimmst, nutze die Website bitte nicht.
 
-We reserve the right to modify, amend, or update these Terms at any time. Such changes will be effective upon posting on the Website. It is your responsibility to review these Terms regularly. Your continued use of the Website after any changes indicates your acceptance of the revised Terms.
+## 2. Änderungen der Bedingungen
 
-**3. Use of the Website**
+Wir behalten uns vor, diese Bedingungen zu ändern oder zu ergänzen. Änderungen gelten ab ihrer Veröffentlichung auf der Website. Es liegt in deiner Verantwortung, die Bedingungen regelmäßig zu prüfen. Die weitere Nutzung nach einer Änderung gilt als Zustimmung zur überarbeiteten Fassung.
 
-You agree to use the Website for lawful purposes and in a manner consistent with these Terms. You are responsible for any content you post or submit on the Website.
+## 3. Nutzung der Website
 
-**4. Registration and Account**
+Du verpflichtest dich, die Website nur für rechtmäßige Zwecke und im Einklang mit diesen Bedingungen zu nutzen. Für Inhalte, die du veröffentlichst oder übermittelst, bist du selbst verantwortlich.
 
-Certain areas of the Website may require registration or the creation of an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+## 4. Registrierung und Benutzerkonto
 
-**5. Content and Intellectual Property**
+Einzelne Bereiche können eine Registrierung oder ein Benutzerkonto erfordern. Dabei sind richtige, aktuelle und vollständige Angaben zu machen und bei Änderungen zu aktualisieren. Du bist für die Vertraulichkeit deiner Zugangsdaten und für die Aktivitäten unter deinem Benutzerkonto verantwortlich.
 
-The content on the Website, including text, graphics, logos, images, audio, video, software, and other materials, is owned or licensed by us and is protected by copyright and other intellectual property laws. You may not use, reproduce, or distribute the content without our prior written consent.
+## 5. Inhalte und geistiges Eigentum
 
-**6. Third-Party Links**
+Die Inhalte der Website, darunter Texte, Grafiken, Logos, Bilder, Audio, Videos und Software, gehören uns oder werden von uns unter Lizenz verwendet. Sie unterliegen dem Urheberrecht und weiteren Schutzrechten. Ohne vorherige schriftliche Zustimmung dürfen sie nicht verwendet, vervielfältigt oder verbreitet werden.
 
-The Website may contain links to third-party websites or resources. We do not endorse and are not responsible for the content, products, or services provided by third parties. Your use of such websites is at your own risk.
+## 6. Verweise auf Dritte
 
-**7. Termination**
+Die Website kann Verweise auf externe Websites oder Ressourcen enthalten. Wir machen uns deren Inhalte, Produkte oder Leistungen nicht zu eigen und übernehmen dafür keine Verantwortung. Die Nutzung dieser Angebote erfolgt auf eigene Verantwortung.
 
-We may, at our sole discretion, terminate or suspend your access to the Website at any time and for any reason, without notice.
+## 7. Beendigung des Zugangs
 
-**8. Disclaimer**
+Wir können den Zugang zur Website nach eigenem Ermessen jederzeit und ohne vorherige Ankündigung sperren oder beenden.
 
-The Website and its content are provided on an "as is" and "as available" basis. We make no warranties or representations about the accuracy or completeness of the content. We do not guarantee that the Website will be error-free or uninterrupted.
+## 8. Gewährleistungsausschluss
 
-**9. Limitation of Liability**
+Die Website und ihre Inhalte werden im vorhandenen Zustand und nach Verfügbarkeit bereitgestellt. Wir geben keine Zusicherungen zur Richtigkeit oder Vollständigkeit der Inhalte. Ein fehlerfreier oder unterbrechungsfreier Betrieb wird nicht garantiert.
 
-To the fullest extent permitted by law, we shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or in connection with the use or inability to use the Website.
+## 9. Haftungsbeschränkung
 
-**10. Governing Law**
+Soweit gesetzlich zulässig, haften wir nicht für unmittelbare, mittelbare, beiläufige, besondere oder Folgeschäden, die aus der Nutzung oder der Unmöglichkeit der Nutzung entstehen. Dazu zählen insbesondere entgangene Gewinne sowie der Verlust von Daten, Nutzungsmöglichkeiten oder sonstigen immateriellen Werten.
 
-These Terms are governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of laws principles. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of [Your Jurisdiction].
+## 10. Anwendbares Recht
 
-_Thank you for reading our Terms of Service. By using the Website, you agree to be bound by these Terms._
+Diese Bedingungen unterliegen dem Recht von [anwendbare Rechtsordnung] unter Ausschluss der kollisionsrechtlichen Regelungen. Für Streitigkeiten aus diesen Bedingungen sind die Gerichte von [zuständiger Gerichtsstand] ausschließlich zuständig.
+
+Mit der Nutzung der Website erklärst du dich mit diesen Bedingungen einverstanden.

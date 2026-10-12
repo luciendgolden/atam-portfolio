@@ -15,44 +15,36 @@ const TitleTag = headingLevel;
 
 <a
     class:list={[
-        "group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600",
+        "group flex h-full flex-col overflow-hidden rounded-xl bg-zinc-900",
         className,
     ]}
     href={`${import.meta.env.BASE_URL}/projects/${project.slug}/`}
 >
     {
         seo?.image && (
-            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+            <div class="aspect-video w-full shrink-0 overflow-hidden bg-[#1b191e]">
                 <img
                     src={
                         seo.image.src.startsWith("/")
                             ? import.meta.env.BASE_URL + seo.image.src
                             : import.meta.env.BASE_URL + `/${seo.image.src}`
                     }
-                    alt={seo.image.alt || `Image for ${title}`}
-                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out grayscale"
+                    alt={seo.image.alt || `Abbildung zu ${title}`}
+                    class="size-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
             </div>
         )
     }
-    <div class="absolute top-0 inset-x-0 z-10">
-        <div class="p-4 flex flex-col h-full sm:p-6">
-            <!-- Avatar -->
-        </div>
-    </div>
-
-    <div class="absolute bottom-0 inset-x-0 z-10">
-        <div class="flex flex-col h-full p-4 sm:p-6">
-            <TitleTag
-                class="text-lg sm:text-3xl font-semibold text-white group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-custom-pink"
-            >
-                {title}
-            </TitleTag>
-            {
-                description && (
-                    <div class="mt-2 text-white/[.8]">{description}</div>
-                )
-            }
-        </div>
+    <div class="flex flex-1 flex-col p-5 sm:p-6">
+        <TitleTag
+            class="text-xl sm:text-2xl font-semibold leading-snug text-white underline decoration-dashed underline-offset-4 decoration-transparent transition-colors duration-300 ease-in-out group-hover:decoration-custom-pink"
+        >
+            {title}
+        </TitleTag>
+        {
+            description && (
+                <div class="mt-3 text-sm leading-relaxed text-white/70">{description}</div>
+            )
+        }
     </div>
 </a>

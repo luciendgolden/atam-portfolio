@@ -8,25 +8,25 @@ const { page, class: className } = Astro.props;
 const getFullURL = (url: any) => url ? `${import.meta.env.BASE_URL}${url}` : null;
 ---
 
-<nav aria-label="Pagination" class:list={['px-12 py-2 relative text-center', className]}>
+<nav aria-label="Seitennavigation" class:list={['px-12 py-2 relative text-center', className]}>
     {
         page.url.prev && (
             <IconButton
                 class="absolute left-0 top-1/2 -translate-y-1/2"
                 href={getFullURL(page.url.prev)}
-                aria-label={`Go to page ${page.currentPage - 1} of ${page.lastPage}`}
+                aria-label={`Zu Seite ${page.currentPage - 1} von ${page.lastPage}`}
             >
                 <ArrowLeft class="w-5 h-5 fill-current" />
             </IconButton>
         )
     }
-    <span class="text-sm" aria-current="page">Page {page.currentPage} of {page.lastPage}</span>
+    <span class="text-sm" aria-current="page">Seite {page.currentPage} von {page.lastPage}</span>
     {
         page.url.next && (
             <IconButton
                 class="absolute right-0 top-1/2 -translate-y-1/2"
                 href={getFullURL(page.url.next)}
-                aria-label={`Go to page ${page.currentPage + 1} of ${page.lastPage}`}
+                aria-label={`Zu Seite ${page.currentPage + 1} von ${page.lastPage}`}
             >
                 <ArrowRight class="w-5 h-5 fill-current" />
             </IconButton>
