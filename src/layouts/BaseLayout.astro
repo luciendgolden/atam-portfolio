@@ -22,9 +22,9 @@ const { showHeader = true, ...head } = Astro.props;
         </script>
         <ClientRouter />
     </head>
-    <body class="bg-main text-main min-h-screen">
+    <body class="bg-main text-main min-h-screen min-h-dvh flex flex-col">
         <Nav />
-        <div class="max-w-[85rem] mx-auto pt-12 pb-10 px-4 sm:px-6 lg:px-8 md:pt-24">
+        <div class="flex flex-1 flex-col w-full max-w-[85rem] mx-auto pt-12 pb-10 px-4 sm:px-6 lg:px-8 md:pt-24">
             <main id="page-content" class="transition-all duration-300 ease-in-out">
                 <slot />
             </main>
