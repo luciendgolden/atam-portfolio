@@ -42,4 +42,4 @@ Für einen ersten Diagnoseablauf bieten sich vier Fragen an:
 
 Eine aufgezeichnete Sequenz ist dafür hilfreicher als ein einzelner Bildschirmstand. Mit ihr lässt sich eine Änderung an Lokalisierung oder Zeitbehandlung unter vergleichbaren Bedingungen prüfen.
 
-Das [Projektkonzept für mobile Robotik in der Simulation](/atam-portfolio/projects/robotik-in-der-simulation/) baut auf dieser Trennung auf.
+Das [Projektkonzept für mobile Robotik in der Simulation](/projects/robotik-in-der-simulation/) baut auf dieser Trennung auf.

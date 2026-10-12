@@ -13,7 +13,7 @@ export async function GET(context) {
         items: posts.map((item) => ({
             title: item.data.title,
             description: item.data.excerpt,
-            link: `${import.meta.env.BASE_URL}/blog/${item.slug}/`,
+            link: `/blog/${item.slug}/`,
             pubDate: item.data.publishDate.setUTCHours(0)
         }))
     });

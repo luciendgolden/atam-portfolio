@@ -35,4 +35,4 @@ Der Entscheidungsschwellenwert wird anhand der Validierungsdaten gewählt. Der a
 
 Das Konzept sieht eine reproduzierbare Trainings- und Auswertungskette sowie einen Bericht mit typischen Fehlentscheidungen vor. Fälle außerhalb der untersuchten Bedingungen werden als offene Grenzen dokumentiert.
 
-Die Grundlagen erklärt der Beitrag [Warum Genauigkeit allein nicht reicht](/atam-portfolio/blog/modelle-sinnvoll-bewerten/).
+Die Grundlagen erklärt der Beitrag [Warum Genauigkeit allein nicht reicht](/blog/modelle-sinnvoll-bewerten/).

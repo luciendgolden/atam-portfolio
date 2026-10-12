@@ -37,4 +37,4 @@ Für Fehlerfälle werden Sensordaten und Transformationen aufgezeichnet. So läs
 
 Vorgesehen sind eine startbare Simulationsumgebung, ein kleiner Szenariokatalog und ein Vergleichsbericht. Ergebnisse aus der Simulation gelten zunächst nur für diese Umgebung. Tests auf echter Hardware wären ein eigener Entwicklungsschritt.
 
-Den Hintergrund behandelt der Beitrag [Koordinatensysteme in der Robotik verstehen](/atam-portfolio/blog/robotik-koordinatensysteme/).
+Den Hintergrund behandelt der Beitrag [Koordinatensysteme in der Robotik verstehen](/blog/robotik-koordinatensysteme/).

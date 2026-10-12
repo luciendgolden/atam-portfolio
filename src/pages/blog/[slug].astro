@@ -64,8 +64,8 @@ const { Content } = await post.render();
                         class="max-w-none object-cover rounded-xl w-full h-96 sm:h-144 md:h-192 lg:h-256 xl:h-320"
                         src={
                             seo.image.src.startsWith("/")
-                                ? import.meta.env.BASE_URL + seo.image.src
-                                : import.meta.env.BASE_URL + `/${seo.image.src}`
+                                ? seo.image.src
+                                : `/${seo.image.src}`
                         }
                         alt={seo.image.alt}
                     />
@@ -85,7 +85,7 @@ const { Content } = await post.render();
                         {tags.map((tag: any) => (
                             <a
                                 class="text-main decoration-custom-pink underline-offset-4 hover:underline"
-                                href={`${import.meta.env.BASE_URL}/tags/${slugify(tag)}`}
+                                href={`/tags/${slugify(tag)}`}
                             >
                                 #{tag}
                             </a>

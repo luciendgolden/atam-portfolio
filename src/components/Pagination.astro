@@ -5,7 +5,7 @@ import IconButton from './IconButton.astro';
 
 const { page, class: className } = Astro.props;
 
-const getFullURL = (url: any) => url ? `${import.meta.env.BASE_URL}${url}` : null;
+const getFullURL = (url: any) => url || null;
 ---
 
 <nav aria-label="Seitennavigation" class:list={['px-12 py-2 relative text-center', className]}>
