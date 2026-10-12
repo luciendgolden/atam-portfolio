@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Crossover – abstrakte 2D-Illustration</title>
+  <desc id="desc">Zwei flache pinkrote und hellrosa Linienstränge tauschen an einer Kreuzung ihre Position. Minimalistisches Diagramm auf dunklem Raster.</desc>
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#1b191e"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <!-- Incoming parent sequences -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M125 205H420" stroke="#ff5470" stroke-width="5"/>
+    <path d="M125 425H420" stroke="#ffe0e6" stroke-width="5"/>
+    <!-- Exchange, symmetric and strictly planar -->
+    <path d="M420 205H485C555 205 570 425 665 425H745" stroke="#ff5470" stroke-width="5"/>
+    <path d="M420 425H485C555 425 570 205 665 205H745" stroke="#ffe0e6" stroke-width="5"/>
+    <path d="M745 205H1075" stroke="#ffe0e6" stroke-width="5"/>
+    <path d="M745 425H1075" stroke="#ff5470" stroke-width="5"/>
+  </g>
+  <!-- Simple flat terminal markers -->
+  <g fill="#1b191e" stroke-width="3">
+    <circle cx="125" cy="205" r="11" stroke="#ff5470"/>
+    <circle cx="125" cy="425" r="11" stroke="#ffe0e6"/>
+    <circle cx="1075" cy="205" r="11" stroke="#ffe0e6"/>
+    <circle cx="1075" cy="425" r="11" stroke="#ff5470"/>
+  </g>
+  <!-- Flat segment markers -->
+  <g stroke-width="3">
+    <rect x="215" y="190" width="82" height="30" rx="6" fill="#ff5470" stroke="#ff5470"/>
+    <rect x="215" y="410" width="82" height="30" rx="6" fill="#ffe0e6" stroke="#ffe0e6"/>
+    <rect x="905" y="190" width="82" height="30" rx="6" fill="#ffe0e6" stroke="#ffe0e6"/>
+    <rect x="905" y="410" width="82" height="30" rx="6" fill="#ff5470" stroke="#ff5470"/>
+  </g>
+</svg>

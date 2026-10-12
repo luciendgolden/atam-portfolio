@@ -5,8 +5,8 @@ seo:
   description: Austausch über angewandte KI, maschinelles Lernen, Robotik und die Entwicklung nachvollziehbarer technischer Systeme.
 ---
 
-Du möchtest dich über ein technisches Problem, eine Projektidee oder einen der Beiträge austauschen? Besonders interessieren mich Anwendungen an der Schnittstelle von Softwareentwicklung, maschinellem Lernen und Robotik.
+Du möchtest dich über ein technisches Problem, eine Projektidee oder einen der Beiträge austauschen? 
 
-Hilfreich sind eine kurze Beschreibung der Aufgabe, der aktuelle Stand und die Frage, bei der du Unterstützung suchst. So lässt sich schnell erkennen, welche technischen Schritte sinnvoll wären.
+Schreib mir gerne per Email unter:
 
-**Die Kontaktadresse wird hier ergänzt.**
+[alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)

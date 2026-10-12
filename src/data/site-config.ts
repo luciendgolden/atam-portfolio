@@ -2,6 +2,8 @@ export type Image = {
     src: string;
     alt?: string;
     caption?: string;
+    objectPosition?: string;
+    grayscale?: boolean;
 };
 
 export type Link = {
@@ -47,11 +49,11 @@ const siteConfig: SiteConfig = {
     },
     */
     title: 'Tampier',
-    subtitle: 'Angewandte KI / Maschinelles Lernen / Robotik',
-    description: 'Tampier – technische Beiträge und Projektkonzepte zu KI-Engineering, maschinellem Lernen und Robotik.',
+    subtitle: 'Angewandte KI / Machine Learning / SWE',
+    description: 'Angewandte KI / Machine Learning / SWE',
     image: {
         src: '/hero.jpeg',
-        alt: 'Alexander Tampier in einem Café'
+        alt: 'Alexander Tampier'
     },
     headerNavLinks: [
         {
@@ -67,34 +69,29 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Themen',
-            href: '/tags'
-        },
-        {
             text: 'Kontakt',
             href: '/contact'
         }
     ],
     footerNavLinks: [
         {
-            text: 'Nutzungsbedingungen',
-            href: '/terms'
+            text: 'Impressum',
+            href: '/impressum'
         },
+        {
+            text: 'Datenschutzerklärung',
+            href: '/datenschutz'
+        }
     ],
     socialLinks: [
         {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/',
-            icon: 'twitter'
-        },
-        {
             text: 'GitHub',
-            href: 'https://github.com',
+            href: 'https://github.com/luciendgolden',
             icon: 'github'
         },
         {
             text: 'LinkedIn',
-            href: 'https://linkedin.com',
+            href: 'https://www.linkedin.com/in/alexander-tampier-658827137',
             icon: 'linkedin'
         },
         {
@@ -105,15 +102,17 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'KI-Engineering in der Praxis.',
-        text: 'Mich interessiert, wie aus einer Idee ein nachvollziehbares technisches System wird. Mein Fokus liegt auf **angewandter KI, maschinellem Lernen und Robotik**: Daten verstehen, Modelle sinnvoll einsetzen und ihr Verhalten gezielt prüfen. Hier findest du technische Beiträge und ausgearbeitete Projektkonzepte.',
+        text: 'Als **KI Fullstack Engineer** entwickle ich **KI-native Produkte und agentische Systeme** von der Idee über Produktkonzeption und Architektur bis zur produktionsreifen Umsetzung. Hier teile ich technische Beiträge und Projektkonzepte.',
         image: {
-            src: '/hero.jpeg',
-            alt: 'Alexander Tampier in einem Café',
-            caption: 'Foto von Marjana J.T'
+            src: '/alexander.png',
+            alt: 'Alexander Tampier',
+            caption: 'Alexander Tampier',
+            objectPosition: 'center 20%',
+            grayscale: true
         },
         actions: [
             {
-                text: 'Kontakt aufnehmen',
+                text: 'Kontakt',
                 href: '/contact'
             }
         ]
