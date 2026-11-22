@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
+  <title id="title">Protection shield</title>
+  <desc id="description">A pink wireframe shield on a dark technical grid, representing security awareness and protection.</desc>
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <path id="shield" d="M500 130C550 166 608 187 670 200V328C670 440 604 518 500 574C396 518 330 440 330 328V200C392 187 450 166 500 130Z"/>
+    <clipPath id="shield-clip"><use href="#shield"/></clipPath>
+  </defs>
+  <rect width="1000" height="700" fill="#1b191e"/>
+  <rect width="1000" height="700" fill="url(#grid)"/>
+  <g fill="none" stroke="#ff5470" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#shield" transform="translate(0 -12) translate(500 350) scale(1.12) translate(-500 -350)" stroke-opacity=".18" stroke-width="1"/>
+    <use href="#shield" fill="#ff5470" fill-opacity=".035" stroke-width="2.5"/>
+    <g clip-path="url(#shield-clip)" stroke-width="1" stroke-opacity=".3">
+      <path d="M365 160V560M410 145V580M455 130V590M500 120V590M545 130V590M590 145V580M635 160V560"/>
+      <path d="M320 230Q500 290 680 230M320 275Q500 335 680 275M320 320Q500 380 680 320M320 365Q500 425 680 365M320 410Q500 470 680 410M320 455Q500 515 680 455M320 500Q500 560 680 500"/>
+      <path d="M330 200L500 574L670 200M330 328L500 130L670 328" stroke-opacity=".5"/>
+    </g>
+    <path d="M500 164C546 194 592 212 640 224V328C640 420 586 488 500 539C414 488 360 420 360 328V224C408 212 454 194 500 164Z" stroke-width="1.25" stroke-opacity=".65"/>
+  </g>
+  <g fill="#ff5470">
+    <circle cx="500" cy="130" r="4"/>
+    <circle cx="330" cy="200" r="4"/>
+    <circle cx="670" cy="200" r="4"/>
+    <circle cx="500" cy="574" r="4"/>
+  </g>
+</svg>
