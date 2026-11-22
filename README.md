@@ -4,23 +4,35 @@ Welcome to my personal portfolio website built with Astro.js and Tailwind CSS. T
 
 ## Development
 
-Use Node.js 22.12+ (CI uses Node 24) and pnpm 12.3.4. `pnpm-lock.yaml` is the lockfile used for development and deployment.
+Use Node.js 22.23.4+ (a supported even-numbered release) and pnpm 12.21.0. Following [Astro’s setup guide](https://docs.astro.build/en/install-and-setup/), use pnpm to install dependencies and run scripts. `pnpm-lock.yaml` is the lockfile used for development and deployment.
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm run dev
 ```
 
-When switching from an older npm/Bun installation, remove `node_modules` before installing to avoid resolving stale dependencies.
+When switching package managers, remove `node_modules` before installing to avoid resolving stale dependencies.
 
 ```sh
 pnpm run check
 pnpm run build
-python3 scripts/check-pages-paths.py
+python3 scripts/check-site-paths.py
 node scripts/check-pagination.mjs
 ```
 
 TypeScript is kept on v6 because `astro check` does not yet support v7. Tailwind CSS v3 runs through PostCSS; the legacy Astro Tailwind integration is no longer used.
+
+## Deployment
+
+The site is deployed at the domain root on Vercel, using `pnpm install --frozen-lockfile` and `pnpm run build`, with `dist` as the output directory.
+
+Canonical URLs, RSS, and sitemaps use `SITE_URL` when set, otherwise Vercel's `VERCEL_PROJECT_PRODUCTION_URL`. Local builds default to `http://localhost:4321`. Set `SITE_URL` to the full origin when using a custom domain.
+
+```sh
+vercel deploy --scope alex-1604s-projects
+```
+
+This creates a preview. Add `--prod` only when ready to publish to production.
 
 ## Features
 

@@ -17,8 +17,8 @@ const { page } = Astro.props;
 ---
 <Pagination page={page} />
 `);
-    execFileSync('npm', ['run', 'build', '--', '--outDir', output], { stdio: 'inherit' });
-    const base = `/atam-portfolio/${route}`;
+    execFileSync('pnpm', ['run', 'build', '--outDir', output], { stdio: 'inherit' });
+    const base = `/${route}`;
     const expected = [[`${base}/2`], [base, `${base}/3`], [`${base}/2`]];
     for (let page = 1; page <= 3; page++) {
         const file = page === 1 ? 'index.html' : `${page}/index.html`;

@@ -2,7 +2,7 @@
 title: Datenschutzerklärung
 seo:
   title: Datenschutzerklärung
-  description: 'Informationen zur Verarbeitung personenbezogener Daten auf Tampier: GitHub Pages, Google Fonts, Theme-Einstellung und Kontakt per E-Mail.'
+  description: 'Informationen zur Verarbeitung personenbezogener Daten auf Tampier: Vercel, Google Fonts, Theme-Einstellung und Kontakt per E-Mail.'
 ---
 
 **Entwurf – rechtliche und technische Prüfung ausstehend.** Diese Erklärung beschreibt den im Quellcode erkennbaren Stand. Sie ist keine Bestätigung der DSGVO-Konformität. Anschrift, offene Anbieterangaben, Rechtsgrundlagen und Löschfristen müssen vor Veröffentlichung vervollständigt beziehungsweise geprüft werden.
@@ -17,18 +17,18 @@ An diese Adresse kannst du dich auch mit Fragen zur Verarbeitung deiner personen
 
 ## 2. Bereitstellung der Website und Hosting
 
-Die Website wird mit Astro als statische Website erstellt und laut Deployment-Konfiguration über **GitHub Pages** bereitgestellt. Beim Abruf werden insbesondere deine IP-Adresse und die angeforderten Ressourcen an den Hostingdienst übermittelt. Hinzukommen können technische Verbindungsdaten wie Zeitpunkt, Browserinformationen und die verweisende Website, soweit dein Browser diese übermittelt.
+Die Website wird mit Astro als statische Website erstellt und laut Deployment-Konfiguration über **Vercel** bereitgestellt. Beim Abruf werden insbesondere deine IP-Adresse und die angeforderten Ressourcen an den Hostingdienst übermittelt. Hinzukommen können technische Verbindungsdaten wie Zeitpunkt, Browserinformationen und die verweisende Website, soweit dein Browser diese übermittelt.
 
-GitHub bestätigt, dass IP-Adressen von Besuchern einer GitHub-Pages-Website zu Sicherheitszwecken protokolliert und gespeichert werden – auch ohne Anmeldung bei GitHub.
+**OFFEN:** Umfang und Dauer der technischen Protokollierung beim verwendeten Vercel-Angebot prüfen.
 
 - **Zwecke:** Auslieferung der Website, Sicherstellung des Betriebs und Abwehr von Missbrauch.
 - **Vorgesehene Rechtsgrundlage für die Bereitstellung:** Art. 6 Abs. 1 lit. f DSGVO; berechtigtes Interesse an einem sicheren und funktionsfähigen Webangebot. Die Interessenabwägung ist vor Veröffentlichung zu dokumentieren.
-- **Empfänger:** GitHub und eingesetzte Hosting- beziehungsweise Infrastruktur-Dienstleister. GitHub nennt in seiner Datenschutzerklärung GitHub, Inc. (USA) und GitHub B.V. (Niederlande).
-- **Speicherdauer:** Die ausgewertete GitHub-Pages-Dokumentation nennt keine konkrete Löschfrist für Besucher-IP-Adressen. **OFFEN:** Die für diese Bereitstellung geltende Frist oder die maßgeblichen Löschkriterien beim Anbieter klären und hier ergänzen.
+- **Empfänger:** Vercel und eingesetzte Hosting- beziehungsweise Infrastruktur-Dienstleister.
+- **Speicherdauer:** **OFFEN:** Die für diese Bereitstellung geltende Frist oder die maßgeblichen Löschkriterien beim Anbieter klären und hier ergänzen.
 
-**OFFEN:** Die konkret zuständige GitHub-Gesellschaft und die datenschutzrechtlichen Rollen beziehungsweise erforderlichen Vereinbarungen anhand des verwendeten Accounts und der Vertragsbedingungen prüfen.
+**OFFEN:** Die konkret zuständige Vercel-Gesellschaft und die datenschutzrechtlichen Rollen beziehungsweise erforderlichen Vereinbarungen anhand des verwendeten Accounts und der Vertragsbedingungen prüfen.
 
-Weitere Informationen: [GitHub Pages und Datenerhebung](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) und [GitHub-Datenschutzerklärung](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+Weitere Informationen: [Vercel-Datenschutzerklärung](https://vercel.com/legal/privacy-policy).
 
 ## 3. Extern geladene Schriftarten: Google Fonts
 
@@ -73,13 +73,13 @@ Weitere Informationen: [Apple-Datenschutzrichtlinie](https://www.apple.com/legal
 
 ## 6. Übermittlungen außerhalb des EWR
 
-Bei den genannten externen Diensten kann eine Verarbeitung außerhalb des Europäischen Wirtschaftsraums, insbesondere in den USA, stattfinden. GitHub nennt in seiner Datenschutzerklärung das EU-US Data Privacy Framework und Standardvertragsklauseln als Übermittlungsmechanismen; Apple beschreibt ebenfalls internationale Übermittlungen und entsprechende Garantien.
+Bei den genannten externen Diensten kann eine Verarbeitung außerhalb des Europäischen Wirtschaftsraums, insbesondere in den USA, stattfinden. Die für Vercel, Google und Apple jeweils geltenden Übermittlungsmechanismen und Garantien sind vor Veröffentlichung zu prüfen.
 
-**Vor Veröffentlichung zu prüfen:** Welche Empfänger, Verarbeitungsländer und Garantien nach Art. 44 ff. DSGVO für GitHub Pages, die Google-Fonts-Einbindung und das iCloud-Postfach tatsächlich gelten. Ein Angemessenheitsbeschluss beziehungsweise eine Zertifizierung darf nur für die davon erfassten Empfänger und Verarbeitungen zugrunde gelegt werden. Die konkreten Angaben und die Bezugsquelle für einschlägige Garantien sind hier zu ergänzen; allgemeine Anbieterhinweise ersetzen diese Prüfung nicht.
+**Vor Veröffentlichung zu prüfen:** Welche Empfänger, Verarbeitungsländer und Garantien nach Art. 44 ff. DSGVO für Vercel, die Google-Fonts-Einbindung und das iCloud-Postfach tatsächlich gelten. Ein Angemessenheitsbeschluss beziehungsweise eine Zertifizierung darf nur für die davon erfassten Empfänger und Verarbeitungen zugrunde gelegt werden. Die konkreten Angaben und die Bezugsquelle für einschlägige Garantien sind hier zu ergänzen; allgemeine Anbieterhinweise ersetzen diese Prüfung nicht.
 
 ## 7. Externe Links, RSS und nicht eingesetzte Funktionen
 
-Die Links zu GitHub, LinkedIn, Veröffentlichungen und anderen Quellen sind gewöhnliche Verweise, keine eingebetteten Social-Media-Plugins. Durch die Links allein lädt diese Website keine Inhalte der jeweiligen Ziele. Beim Öffnen eines Links gelten die Datenschutzinformationen des Zielanbieters. Davon unabhängig ist GitHub bereits als Hostingdienst beteiligt.
+Die Links zu GitHub, LinkedIn, Veröffentlichungen und anderen Quellen sind gewöhnliche Verweise, keine eingebetteten Social-Media-Plugins. Durch die Links allein lädt diese Website keine Inhalte der jeweiligen Ziele. Beim Öffnen eines Links gelten die Datenschutzinformationen des Zielanbieters. Als Hostingdienst dieser Website ist Vercel beteiligt.
 
 Der RSS-Feed wird als statische Datei über denselben Hostingdienst ausgeliefert. Ein extern verwendeter Feedreader kann eigene Datenverarbeitungen vornehmen.
 

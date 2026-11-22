@@ -1,12 +1,12 @@
-"""Check the built site against the GitHub Pages project deployment path."""
+"""Check built root-domain URLs against existing output files."""
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
 DIST = Path("dist")
-BASE = "/atam-portfolio"
-ORIGIN = "https://luciendgolden.github.io"
+ORIGIN = ET.parse(DIST / "sitemap-index.xml").findtext("{*}sitemap/{*}loc")
+assert ORIGIN, "Run pnpm run build first"
 checked = 0
 
 
@@ -15,14 +15,14 @@ def check_url(value):
     # Existing inline dependency reference, unrelated to the base-path migration.
     if value == "/node_modules/preline/preline.js":
         return
+    assert not value.startswith("//"), value
     url = urlsplit(value)
     if url.scheme or url.netloc:
         if url.netloc != urlsplit(ORIGIN).netloc:
             return
     elif not value.startswith("/"):
         return
-    assert url.path == BASE or url.path.startswith(BASE + "/"), value
-    relative = unquote(url.path[len(BASE):]).lstrip("/")
+    relative = unquote(url.path).lstrip("/")
     target = DIST / relative
     assert target.is_file() or (target / "index.html").is_file(), value
     checked += 1
@@ -39,7 +39,7 @@ class PageParser(HTMLParser):
 
 
 pages = list(DIST.rglob("*.html"))
-assert pages, "Run npm run build first"
+assert pages, "Run pnpm run build first"
 for page in pages:
     PageParser().feed(page.read_text())
 for name in ("rss.xml", "sitemap-index.xml", "sitemap-0.xml"):
