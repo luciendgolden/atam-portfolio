@@ -6,8 +6,8 @@ isFeatured: true
 seo:
   description: 'Evaluating Llama, Mistral, and RoBERTa for anomaly detection and next-activity prediction in semantics-aware process mining.'
   image:
-    src: '/models/gaussian-surface.svg'
-    alt: 'Wireframe of a two-dimensional Gaussian function forming a bell-shaped surface'
+    src: '/models/transformer.svg'
+    alt: 'Transformer architecture diagram with encoder and decoder stacks and attention connections'
 ---
 
 This project explores how language models can support semantics-aware process mining. It focuses on identifying anomalies in process flows and predicting the next activity.

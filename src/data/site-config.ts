@@ -49,8 +49,8 @@ const siteConfig: SiteConfig = {
     },
     */
     title: 'Tampier',
-    subtitle: 'Applied AI / Machine Learning / Software Engineering',
-    description: 'Applied AI / Machine Learning / Software Engineering',
+    subtitle: 'Applied AI / ML / SWE',
+    description: 'Applied AI / ML / SWE',
     image: {
         src: '/hero.jpeg',
         alt: 'Alexander Tampier'
@@ -101,7 +101,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'AI engineering in practice.',
+        title: 'AI engineering',
         text: 'As a **full-stack AI engineer**, I build **AI-native products and agentic systems**, from the initial idea and product design through architecture and production. Here I share Blog and Projects.',
         image: {
             src: '/alexander.png',

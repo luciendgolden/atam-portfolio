@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-220 -5 1440 810" width="1440" height="810">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09"/>
+    </pattern>
+    <marker id="arrow" markerWidth="7" markerHeight="10" refX="6" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L6 5 1 9" fill="none" stroke="#ff5470" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="residual-arrow" markerWidth="7" markerHeight="10" refX="6" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L6 5 1 9" fill="none" stroke="#b28f98" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <rect id="norm" width="256" height="40" rx="8" fill="#30242c" stroke="#b28f98"/>
+    <rect id="feed-forward" width="256" height="40" rx="8" fill="#36232c" stroke="#db7f91"/>
+    <rect id="attention" width="256" height="48" rx="8" fill="#42242e" stroke="#ff5470"/>
+    <rect id="embedding" width="256" height="44" rx="8" fill="#30242c" stroke="#b28f98"/>
+    <g id="position" fill="#1b191e" stroke="#ff5470" stroke-width="1.5" stroke-linecap="round">
+      <circle r="13"/>
+      <path d="M-8 0C-5 -8 -2 -8 0 0S5 8 8 0" fill="none"/>
+    </g>
+    <g id="sum" fill="#1b191e" stroke="#ff5470" stroke-width="1.5" stroke-linecap="round">
+      <circle r="10"/>
+      <path d="M-4 0H4M0 -4V4"/>
+    </g>
+  </defs>
+
+  <rect x="-220" y="-5" width="1440" height="810" fill="#1b191e"/>
+  <rect x="-220" y="-5" width="1440" height="810" fill="url(#grid)"/>
+  <g fill="none" stroke="#b28f98" stroke-opacity=".45" stroke-width="1.5">
+    <rect x="92" y="322" width="348" height="310" rx="20"/>
+    <rect x="506" y="162" width="400" height="470" rx="20"/>
+  </g>
+
+  <g fill="none" stroke="#b28f98" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#residual-arrow)">
+    <path d="M280 609H132Q118 609 118 595V501Q118 487 132 487H152"/>
+    <path d="M280 457H132Q118 457 118 443V381Q118 367 132 367H152"/>
+    <path d="M710 609H858Q872 609 872 595V501Q872 487 858 487H838"/>
+    <path d="M710 461H858Q872 461 872 447V333Q872 319 858 319H838"/>
+    <path d="M710 289H858Q872 289 872 275V213Q872 199 858 199H838"/>
+  </g>
+
+  <g fill="none" stroke="#ff5470" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M227 666H270M720 666H759"/>
+    <g marker-end="url(#arrow)">
+      <path d="M280 753V737"/>
+      <path d="M710 753V737"/>
+      <path d="M280 693V676"/>
+      <path d="M710 693V676"/>
+      <path d="M280 656V575"/>
+      <path d="M710 656V575"/>
+      <path d="M280 598H230Q216 598 216 584V575"/>
+      <path d="M280 598H330Q344 598 344 584V575"/>
+      <path d="M710 598H660Q646 598 646 584V575"/>
+      <path d="M710 598H760Q774 598 774 584V575"/>
+      <path d="M280 527V507"/>
+      <path d="M710 527V507"/>
+      <path d="M280 467V447"/>
+      <path d="M280 407V387"/>
+      <path d="M710 467V458Q710 447 722 447H762Q778 447 778 431V407"/>
+      <path d="M280 347V302Q280 286 296 286H463Q479 286 479 302V413Q479 429 495 429H698Q710 429 710 417V407"/>
+      <path d="M634 429Q646 429 646 417V407"/>
+      <path d="M710 359V339"/>
+      <path d="M710 299V279"/>
+      <path d="M710 239V219"/>
+      <path d="M710 179V154"/>
+      <path d="M710 118V98"/>
+      <path d="M710 62V45"/>
+    </g>
+  </g>
+
+  <g>
+    <use href="#norm" x="152" y="347"/>
+    <use href="#feed-forward" x="152" y="407"/>
+    <use href="#norm" x="152" y="467"/>
+    <use href="#attention" x="152" y="527"/>
+    <use href="#norm" x="582" y="179"/>
+    <use href="#feed-forward" x="582" y="239"/>
+    <use href="#norm" x="582" y="299"/>
+    <use href="#attention" x="582" y="359"/>
+    <use href="#norm" x="582" y="467"/>
+    <use href="#attention" x="582" y="527"/>
+    <use href="#embedding" x="152" y="693"/>
+    <use href="#embedding" x="582" y="693"/>
+    <rect x="582" y="118" width="256" height="36" rx="8" fill="#36232c" stroke="#db7f91"/>
+    <rect x="582" y="62" width="256" height="36" rx="8" fill="#42242e" stroke="#ff5470"/>
+    <use href="#position" x="214" y="666"/>
+    <use href="#position" x="772" y="666"/>
+    <use href="#sum" x="280" y="666"/>
+    <use href="#sum" x="710" y="666"/>
+  </g>
+
+</svg>
