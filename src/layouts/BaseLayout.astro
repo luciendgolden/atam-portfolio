@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import SpeedInsights from "@vercel/speed-insights/astro";
 import BaseHead, {
     type Props as HeadProps,
 } from "../components/BaseHead.astro";
@@ -30,6 +31,7 @@ const { showHeader = true, ...head } = Astro.props;
             </main>
             <Footer />
         </div>
+        <SpeedInsights />
     </body>
 </html>
 
