@@ -5,12 +5,12 @@ seo:
   description: 'Informationen zur Verarbeitung personenbezogener Daten auf Tampier: Vercel, Google Fonts, Theme-Einstellung und Kontakt per E-Mail.'
 ---
 
-**Entwurf – rechtliche und technische Prüfung ausstehend.** Diese Erklärung beschreibt den im Quellcode erkennbaren Stand. Sie ist keine Bestätigung der DSGVO-Konformität. Anschrift, offene Anbieterangaben, Rechtsgrundlagen und Löschfristen müssen vor Veröffentlichung vervollständigt beziehungsweise geprüft werden.
+**Entwurf.** Die Angaben zu extern geladenen Schriftarten, zur automatischen Speicherung der Theme-Einstellung und zur Verarbeitung durch die Anbieter werden noch geprüft.
 
 ## 1. Verantwortlicher
 
-Alexander Tampier, Privatperson  
-**Anschrift – PLATZHALTER:** [Straße, Hausnummer, Postleitzahl und Wohnort ergänzen], Österreich  
+Alexander Tampier betreibt dieses persönliche Portfolio als Privatperson in Österreich.
+
 **E-Mail:** [alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)
 
 An diese Adresse kannst du dich auch mit Fragen zur Verarbeitung deiner personenbezogenen Daten und zur Ausübung deiner Datenschutzrechte wenden.
@@ -23,12 +23,10 @@ Die Website wird mit Astro als statische Website erstellt und laut Deployment-Ko
 
 - **Zwecke:** Auslieferung der Website, Sicherstellung des Betriebs und Abwehr von Missbrauch.
 - **Vorgesehene Rechtsgrundlage für die Bereitstellung:** Art. 6 Abs. 1 lit. f DSGVO; berechtigtes Interesse an einem sicheren und funktionsfähigen Webangebot. Die Interessenabwägung ist vor Veröffentlichung zu dokumentieren.
-- **Empfänger:** Vercel und eingesetzte Hosting- beziehungsweise Infrastruktur-Dienstleister.
+- **Empfänger:** Vercel Inc., USA, und die von Vercel eingesetzten Infrastruktur-Dienstleister.
 - **Speicherdauer:** **OFFEN:** Die für diese Bereitstellung geltende Frist oder die maßgeblichen Löschkriterien beim Anbieter klären und hier ergänzen.
 
-**OFFEN:** Die konkret zuständige Vercel-Gesellschaft und die datenschutzrechtlichen Rollen beziehungsweise erforderlichen Vereinbarungen anhand des verwendeten Accounts und der Vertragsbedingungen prüfen.
-
-Weitere Informationen: [Vercel-Datenschutzerklärung](https://vercel.com/legal/privacy-policy).
+Vercel verarbeitet Kundendaten nach Maßgabe seines Auftragsverarbeitungsvertrags und beschreibt die Verarbeitung von Daten in eigener Verantwortung in seiner Datenschutzerklärung. Weitere Informationen findest du in den [Vercel-Nutzungsbedingungen](https://vercel.com/legal/terms), im [Auftragsverarbeitungsvertrag](https://vercel.com/legal/dpa) und in der [Vercel-Datenschutzerklärung](https://vercel.com/legal/privacy-notice).
 
 ## 3. Extern geladene Schriftarten: Google Fonts
 
@@ -65,7 +63,7 @@ Wenn du an die angegebene E-Mail-Adresse schreibst, werden deine E-Mail-Adresse,
 
 - **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO für die Bearbeitung allgemeiner Anfragen; berechtigtes Interesse an der Beantwortung eingehender Nachrichten. Soweit eine Anfrage auf einen Vertrag oder vorvertragliche Maßnahmen auf deinen Wunsch gerichtet ist, kommt Art. 6 Abs. 1 lit. b DSGVO zur Anwendung.
 - **Empfänger:** Das veröffentlichte Postfach nutzt **Apple iCloud Mail**. Apple und gegebenenfalls beteiligte E-Mail-Dienstleister verarbeiten Daten zur Zustellung und Speicherung. Apple nennt für Personen im EWR Apple Distribution International Limited, Irland, als zuständige Gesellschaft in seiner Datenschutzrichtlinie.
-- **Löschung:** Für die eigene Korrespondenz ist eine Löschung vorgesehen, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten oder erforderlichen Gründe zur Rechtsverfolgung entgegenstehen. **OFFEN:** Einen konkreten Löschprozess einschließlich Archiv und Papierkorb festlegen; davon zu unterscheiden sind die Speicherfristen des Mailanbieters.
+- **Löschung:** Gewöhnliche Anfragen werden spätestens 90 Tage nach Abschluss der Bearbeitung aus dem Postfach einschließlich Archiv und Papierkorb gelöscht. Eine längere Aufbewahrung erfolgt, soweit gesetzliche Pflichten bestehen oder die Nachrichten zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich sind.
 
 Du musst keine E-Mail senden, um die Website zu lesen. Ohne die zur Bearbeitung nötigen Angaben kann eine Anfrage gegebenenfalls nicht beantwortet werden. Bitte übermittle keine unnötigen sensiblen Daten.
 
@@ -83,7 +81,9 @@ Die Links zu GitHub, LinkedIn, Veröffentlichungen und anderen Quellen sind gew�
 
 Der RSS-Feed wird als statische Datei über denselben Hostingdienst ausgeliefert. Ein extern verwendeter Feedreader kann eigene Datenverarbeitungen vornehmen.
 
-Im geprüften Website-Code sind **keine aktiven Analyse- oder Werbetracker, Tracking-Pixel, Benutzerkonten oder Zahlungsdienste** eingebunden. Die vorhandene Newsletter-Komponente wird derzeit nicht in den Seiten gerendert; ein Newsletterdienst ist nicht angebunden. Der eigene Website-Code setzt keine Cookies, verwendet aber den oben beschriebenen localStorage. Dies trifft keine pauschale Aussage über die Verarbeitung durch die genannten Anbieter.
+Die Website bietet keine Benutzerkonten, Zahlungsdienste oder Newsletter-Anmeldung an. Der eigene Website-Code setzt keine Cookies. Er verwendet den oben beschriebenen localStorage.
+
+Der Website-Code bindet **Vercel Speed Insights** zur Messung der Ladezeit und Darstellung ein. Bei aktiviertem Dienst erfasst Vercel unter anderem die aufgerufene Seite, Leistungswerte, Browser, Gerätetyp und Land. Laut Vercel werden die Messwerte weder einzelnen Besuchern noch deren IP-Adressen zugeordnet. Weitere Angaben findest du in den [Datenschutzinformationen zu Vercel Speed Insights](https://vercel.com/docs/speed-insights/privacy-policy).
 
 Astro, Tailwind CSS und die lokal eingebundenen Oberflächen-Skripte sind Werkzeuge zur Erstellung und Darstellung der Website, keine zusätzlich eingebundenen externen Analysedienste. Die in Projektbeschreibungen erwähnten KI-Modelle und APIs werden beim Lesen dieser Seiten nicht aufgerufen.
 
@@ -112,6 +112,4 @@ Durch den Betreiber findet auf dieser Website keine automatisierte Entscheidungs
 
 ## 9. Stand und offene Prüfung
 
-**Stand des Entwurfs: 13. Oktober 2026.** Grundlage sind der Quellcode und die dort konfigurierte Bereitstellung, nicht eine Prüfung des produktiven Hostings oder des E-Mail-Kontos.
-
-Vor Veröffentlichung sind insbesondere die Betreiberanschrift, die Anbieterrollen, die Löschfristen, die Drittlandgarantien sowie die Rechtsgrundlagen für externe Schriftarten und lokale Speicherung zu vervollständigen. Änderungen an Hosting, Kontaktmöglichkeiten oder eingebundenen Diensten erfordern eine erneute Prüfung dieser Erklärung.
+**Stand des Entwurfs: 22. November 2026.** Offen sind die Aufbewahrung technischer Hosting-Daten, die für die einzelnen Dienste geltenden Drittlandgarantien sowie die rechtliche Prüfung der extern geladenen Schriftarten und der automatischen Theme-Speicherung.
