@@ -6,8 +6,8 @@ isFeatured: true
 seo:
   description: 'An agentic content marketing pipeline built with FastAPI, the OpenCode SDK, MCP, tool calling, and validated structured outputs.'
   image:
-    src: '/models/harmonic-trajectory.svg'
-    alt: 'Harmonic trajectory'
+    src: '/models/langgraph-marketing-pipeline.svg'
+    alt: 'State diagram with parallel branches, approval routes, and revision loops'
 ---
 
 The Agentic Content Marketing Pipeline automates content creation and publishing in a single agentic workflow. It uses FastAPI and the OpenCode SDK to connect agents, tools, and structured processing steps.
