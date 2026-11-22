@@ -1,32 +1,32 @@
 ---
 title: 'RecombiText'
-description: 'Statistische Textaugmentation für daten-effizientes Sprachmodelltraining: semantische Rekombination und bis zu vierfache Erweiterung von Trainingsdatensätzen.'
+description: 'Statistical text augmentation for data-efficient language model training through semantic recombination and up to fourfold dataset expansion.'
 publishDate: '2026-10-12'
 isFeatured: true
 seo:
-  description: 'RecombiText: Statistische Rekombination von Textdaten für Low-Resource-Szenarien und daten-effizientes Pretraining von Transformer-Modellen.'
+  description: 'RecombiText uses statistical text recombination for low-resource settings and data-efficient pre-training of transformer models.'
   image:
     src: '/models/rta-crossover.svg'
-    alt: 'rta-crossover'
+    alt: 'Crossover of two bundles of pink lines'
 ---
 
-RecombiText untersucht, wie sich begrenzte Textkorpora für das Training von Sprachmodellen erweitern lassen. Im Mittelpunkt steht ein statistisches Framework, das Textdaten semantisch rekombiniert, statt zusätzliche Datenquellen oder generative Modelle zur Augmentation vorauszusetzen.
+RecombiText explores how to expand limited text corpora for language model training. Its statistical framework recombines existing text semantically without requiring additional data sources or generative models for augmentation.
 
-## Umsetzung
+## Implementation
 
-- Konzeption und Implementierung eines statistischen Frameworks zur semantischen Rekombination von Textdaten in Low-Resource-Szenarien.
-- Entwicklung einer Pipeline zur bis zu vierfachen Erweiterung von Trainingsdatensätzen.
-- Durchführung von Pretraining- und Fine-Tuning-Experimenten mit Transformer-Modellen.
-- Untersuchung daten-effizienter Trainingsansätze unter Einsatz von GPT-2, RoBERTa, T5 und Hugging Face Trainer.
+- Designed and implemented a statistical framework for semantic text recombination in low-resource settings.
+- Built a pipeline to expand training datasets by up to fourfold.
+- Ran pre-training and fine-tuning experiments with transformer models.
+- Investigated data-efficient training with GPT-2, RoBERTa, T5, and Hugging Face Trainer.
 
-## Forschungsbeitrag
+## Research contribution
 
-Die Arbeit wurde im Rahmen des **BabyLM Workshops 2025** veröffentlicht. Sie untersucht, wie sich statistisch erzeugte Trainingsdaten auf die Fähigkeiten vortrainierter Sprachmodelle auswirken. Die Ergebnisse der Veröffentlichung zeigen Verbesserungen in ausgewählten Benchmarks und vergleichbare Leistungen in weiteren Aufgaben – keine pauschale Überlegenheit synthetischer Daten.
+The work was published at the **2025 BabyLM Workshop**. It examines how statistically generated training data affects the capabilities of pre-trained language models. The paper reports improvements on selected benchmarks and comparable performance on other tasks.
 
-## Technologien
+## Technologies
 
-Python, PyTorch, Hugging Face Transformers / Trainer, NumPy, pandas, scikit-learn und Elasticsearch.
+Python, PyTorch, Hugging Face Transformers and Trainer, NumPy, pandas, scikit-learn, and Elasticsearch.
 
-## Veröffentlichung
+## Publication
 
 [RecombiText: Compositional Data Augmentation for Enhancing LLM Pre-Training Datasets in Low-Resource Scenarios — ACL Anthology](https://aclanthology.org/2025.babylm-main.40/)

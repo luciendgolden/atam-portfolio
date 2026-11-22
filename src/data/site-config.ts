@@ -45,23 +45,23 @@ const siteConfig: SiteConfig = {
     logo: {
         src: '/about.jpeg',
         alt: 'logo',
-        caption: 'Designvorlage für Portfolio und Blog'
+        caption: 'Portfolio and blog template'
     },
     */
     title: 'Tampier',
-    subtitle: 'Angewandte KI / Machine Learning / SWE',
-    description: 'Angewandte KI / Machine Learning / SWE',
+    subtitle: 'Applied AI / Machine Learning / Software Engineering',
+    description: 'Applied AI / Machine Learning / Software Engineering',
     image: {
         src: '/hero.jpeg',
         alt: 'Alexander Tampier'
     },
     headerNavLinks: [
         {
-            text: 'Start',
+            text: 'Home',
             href: '/'
         },
         {
-            text: 'Projekte',
+            text: 'Projects',
             href: '/projects'
         },
         {
@@ -69,17 +69,17 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Kontakt',
+            text: 'Contact',
             href: '/contact'
         }
     ],
     footerNavLinks: [
         {
-            text: 'Impressum',
+            text: 'Legal Notice',
             href: '/impressum'
         },
         {
-            text: 'Datenschutzerklärung',
+            text: 'Privacy Policy',
             href: '/datenschutz'
         }
     ],
@@ -101,8 +101,8 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'KI-Engineering in der Praxis.',
-        text: 'Als **KI Fullstack Engineer** entwickle ich **KI-native Produkte und agentische Systeme** von der Idee über Produktkonzeption und Architektur bis zur produktionsreifen Umsetzung. Hier teile ich technische Beiträge und Projektkonzepte.',
+        title: 'AI engineering in practice.',
+        text: 'As a **full-stack AI engineer**, I build **AI-native products and agentic systems**, from the initial idea and product design through architecture and production. Here I share Blog and Projects.',
         image: {
             src: '/alexander.png',
             alt: 'Alexander Tampier',
@@ -112,14 +112,14 @@ const siteConfig: SiteConfig = {
         },
         actions: [
             {
-                text: 'Kontakt',
+                text: 'Contact',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
-        title: 'Neue Beiträge per E-Mail',
-        text: 'Technische Notizen und neue Projektideen direkt in dein Postfach.',
+        title: 'New articles by email',
+        text: 'Technical notes and new project ideas delivered to your inbox.',
         formUrl: '#'
     },
     postsPerPage: 6,

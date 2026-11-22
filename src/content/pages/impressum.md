@@ -1,36 +1,28 @@
 ---
-title: Impressum
+title: Legal Notice
 seo:
-  title: Impressum
-  description: Angaben zum privaten Betreiber und Medieninhaber des Portfolios Tampier in Österreich sowie zur grundlegenden Richtung der Website.
+  title: Legal Notice
+  description: Information about the private operator and media owner of the Tampier portfolio in Austria and the purpose of the website.
 ---
 
-**Entwurf – nicht zur unveränderten Veröffentlichung geeignet.** Die mit „PLATZHALTER“ gekennzeichneten Angaben müssen ergänzt und die rechtlichen Anforderungen vor der Veröffentlichung geprüft werden.
+## Website operator and media owner
 
-## Betreiber und Medieninhaber
+Alexander Tampier, private individual
 
-Alexander Tampier  
-Privatperson, Österreich
+**Place of residence** — Vienna, Austria
 
-**Anschrift – PLATZHALTER:**  
-[Straße und Hausnummer ergänzen]  
-[Postleitzahl und Wohnort ergänzen]  
-Österreich
+**Email** — [alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)
 
-**E-Mail:** [alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)
+## Editorial purpose
 
-## Grundlegende Richtung der Website
+This is a personal portfolio featuring Blog and project profiles. It covers Alexander Tampier's work and interests in AI engineering, software development, AI-native products, and agentic systems.
 
-Diese Website ist ein persönliches Portfolio mit technischen Fachbeiträgen und Projektvorstellungen. Sie informiert über die Arbeit und Interessen von Alexander Tampier in den Bereichen KI-Engineering, Softwareentwicklung, AI-native Produkte und agentische Systeme.
+## Disclosure
 
-## Offenlegung
+The operator and editorial details are provided under [Section 25 of the Austrian Media Act](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10000719&Paragraf=25).
 
-Die Angaben zum Medieninhaber und zur grundlegenden Richtung dienen der Offenlegung nach [§ 25 Mediengesetz](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10000719&Paragraf=25).
+## Content and sources
 
-**Vor Veröffentlichung zu prüfen:** Ob aufgrund der tatsächlichen Inhalte, angebotenen Leistungen oder einer wirtschaftlichen Tätigkeit weitere Informationspflichten bestehen. Die Bezeichnung „privat“ allein entscheidet nicht über die anwendbaren Pflichten.
+The original Blog and project descriptions are for informational purposes. External sources and project repositories are linked where relevant. Send questions and corrections to the email address above.
 
-## Hinweise zu Inhalten und Quellen
-
-Eigene technische Beiträge und Projektbeschreibungen dienen der Information. Verwendete externe Quellen und Projekt-Repositories sind an den jeweiligen Stellen verlinkt. Bei Fragen oder Hinweisen auf Fehler ist der Betreiber unter der oben angegebenen E-Mail-Adresse erreichbar.
-
-**Stand des Entwurfs:** 13. Oktober 2026
+**Last updated** — 22 November 2026

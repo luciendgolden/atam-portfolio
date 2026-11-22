@@ -1,32 +1,32 @@
 ---
 title: 'Agentic Content Marketing Pipeline'
-description: 'Agentische Pipeline zur automatisierten Content-Erstellung und Veröffentlichung mit Multi-Agent-Orchestrierung, MCP und validierten Ausgaben.'
+description: 'An agentic pipeline that automates content creation and publishing with multi-agent orchestration, MCP, and validated outputs.'
 publishDate: '2026-10-12'
 isFeatured: true
 seo:
-  description: 'Agentische Content-Marketing-Pipeline mit FastAPI, OpenCode SDK, MCP, Tool Calling und strukturierten, validierten Ausgaben.'
+  description: 'An agentic content marketing pipeline built with FastAPI, the OpenCode SDK, MCP, tool calling, and validated structured outputs.'
   image:
     src: '/models/harmonic-trajectory.svg'
-    alt: 'harmonic-trajectory'
+    alt: 'Harmonic trajectory'
 ---
 
-Die Agentic Content Marketing Pipeline verbindet automatisierte Content-Erstellung und Veröffentlichung in einem agentischen Workflow. Das Projekt setzt auf FastAPI und das OpenCode SDK, um Agenten, Werkzeuge und strukturierte Verarbeitungsschritte zusammenzuführen.
+The Agentic Content Marketing Pipeline automates content creation and publishing in a single agentic workflow. It uses FastAPI and the OpenCode SDK to connect agents, tools, and structured processing steps.
 
-## Umsetzung
+## Implementation
 
-- Implementierung einer agentischen Pipeline zur automatisierten Erstellung und Veröffentlichung von Inhalten.
-- Einsatz von Tool Calling und MCP zur Einbindung von Werkzeugen in AI-Workflows.
-- Multi-Agent-Orchestrierung zur Koordination der Verarbeitungsschritte.
-- Verarbeitung strukturierter Ausgaben und Validierung innerhalb der Pipeline.
+- Built a pipeline to automate content creation and publishing.
+- Used tool calling and MCP to make tools available to AI workflows.
+- Coordinated processing steps with multi-agent orchestration.
+- Processed and validated structured outputs within the pipeline.
 
-## Technischer Fokus
+## Technical focus
 
-Im Mittelpunkt steht das Zusammenspiel von Agenten und Anwendungscode: Agentische Verarbeitung wird mit expliziten Schnittstellen sowie strukturierten, validierten Ausgaben verbunden. Damit geht das Projekt über die isolierte Textgenerierung hinaus und integriert sie in einen durchgängigen Veröffentlichungsprozess.
+Agents and application code interact through explicit interfaces and validated structured outputs. Text generation is one step in a workflow that runs through publication.
 
-## Technologien
+## Technologies
 
-Python, FastAPI, OpenCode SDK, MCP, Tool Calling und Structured Outputs.
+Python, FastAPI, OpenCode SDK, MCP, tool calling, and structured outputs.
 
 ## Repository
 
-**Privates Repository.** Der Quellcode ist nicht öffentlich zugänglich.
+**Private repository.** The source code is unavailable to the public.

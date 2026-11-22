@@ -1,32 +1,32 @@
 ---
 title: 'Car Service Orchestration'
-description: 'Microservices für kontextbezogene Mobilitätsdienste mit semantischem Wissensmodell und Verfahren für Prognosen, Entscheidungen und Optimierung.'
+description: 'Microservices for context-aware mobility services with a semantic knowledge model and methods for prediction, decision-making, and optimisation.'
 publishDate: '2026-10-12'
 isFeatured: true
 seo:
-  description: 'Microservices-Architektur für Mobilitätsdienste mit RDF, Apache Jena, Reinforcement Learning, Hidden-Markov-Modellen und Optimierungsverfahren.'
+  description: 'A microservices architecture for mobility services using RDF, Apache Jena, reinforcement learning, hidden Markov models, and optimisation methods.'
   image:
     src: '/models/graph.svg'
-    alt: 'Illustration: Vernetzte Knoten und Cluster eines Knowledge Graphs'
+    alt: 'Connected nodes and clusters in a knowledge graph'
 ---
 
-Car Service Orchestration verbindet eine Microservices-Architektur mit einem semantischen Wissensmodell für kontextbezogene Mobilitätsdienste. Das Projekt kombiniert die Modellierung von Wissen mit Verfahren zur Prognose, Entscheidungsfindung und Optimierung.
+Car Service Orchestration pairs a microservices architecture with a semantic knowledge model for context-aware mobility services. The project combines knowledge modelling with methods for prediction, decision-making, and optimisation.
 
-## Umsetzung
+## Implementation
 
-- Entwicklung einer Microservices-Architektur für kontextbezogene Mobilitätsdienste.
-- Aufbau eines semantischen Wissensmodells mit RDF und einem Triple Store.
-- Integration von Reinforcement Learning, Hidden-Markov-Modellen, Fuzzy Logic und genetischen Algorithmen.
-- Einsatz dieser Verfahren für Prognosen, Entscheidungen und Optimierungsaufgaben innerhalb der Mobilitätsumgebung.
+- Developed a microservices architecture for context-aware mobility services.
+- Built a semantic knowledge model with RDF and a triple store.
+- Integrated reinforcement learning, hidden Markov models, fuzzy logic, and genetic algorithms.
+- Applied these methods to prediction, decision-making, and optimisation in the mobility environment.
 
-## Technischer Fokus
+## Technical focus
 
-Die Architektur bringt verteilte Dienste und semantisch modelliertes Wissen zusammen. Unterschiedliche KI- und Optimierungsverfahren ergänzen diesen Aufbau, um den jeweiligen Kontext der Mobilitätsdienste zu berücksichtigen.
+The architecture brings together distributed services and semantically modelled knowledge. AI and optimisation methods help the services account for the context in which they operate.
 
-## Technologien
+## Technologies
 
-Python, Java, RDF, Apache Jena, TensorFlow, scikit-learn, PyGAD, Docker und MQTT.
+Python, Java, RDF, Apache Jena, TensorFlow, scikit-learn, PyGAD, Docker, and MQTT.
 
 ## Repository
 
-[Quellcode auf GitHub: carshare-environment](https://github.com/luciendgolden/carshare-environment)
+[Source code on GitHub: carshare-environment](https://github.com/luciendgolden/carshare-environment)

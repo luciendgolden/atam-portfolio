@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="title description">
 <title id="title">Knowledge Graph</title>
-<desc id="description">Schematischer Knowledge Graph: Einheitlich rosa gefüllte Knoten repräsentieren Entitäten, feine Verbindungen ihre Beziehungen. Größere Knoten verbinden mehrere Cluster auf dunklem Raster.</desc>
+<desc id="description">Schematic knowledge graph on a dark grid. Pink nodes represent entities and thin edges represent relationships. Larger nodes connect multiple clusters.</desc>
 <defs>
 <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".045" stroke-width="1"/></pattern>
 <circle id="node" r="6" fill="#ff5470"/>

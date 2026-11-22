@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
-  <title id="title">Crossover – abstrakte 2D-Illustration</title>
-  <desc id="desc">Zwei flache pinkrote und hellrosa Linienstränge tauschen an einer Kreuzung ihre Position. Minimalistisches Diagramm auf dunklem Raster.</desc>
+  <title id="title">Crossover: abstract 2D illustration</title>
+  <desc id="desc">Two bundles of reddish-pink and pale-pink lines swap positions at a crossing on a dark grid.</desc>
   <defs>
     <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M50 0H0V50" fill="none" stroke="#b28f98" stroke-opacity=".09" stroke-width="1"/>

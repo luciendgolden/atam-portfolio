@@ -4,9 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Button from "../../components/Button.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import PostPreview from "../../components/PostPreview.astro";
-import Subscribe from "../../components/Subscribe.astro";
-import { sortItemsByDateDesc } from "../../utils/data-utils";
-import { slugify } from "../../utils/common-utils";
+import { getTagSlug, sortItemsByDateDesc } from "../../utils/data-utils";
 
 export async function getStaticPaths() {
     const posts = (await getCollection("blog")).sort(sortItemsByDateDesc);
@@ -50,7 +48,7 @@ const { Content } = await render(post);
                         <>
                             {" "}
                             <span>
-                                (Aktualisiert am <FormattedDate date={updatedDate} />)
+                                (Updated <FormattedDate date={updatedDate} />)
                             </span>
                         </>
                     )
@@ -85,7 +83,7 @@ const { Content } = await render(post);
                         {tags.map((tag: any) => (
                             <a
                                 class="text-main decoration-custom-pink underline-offset-4 hover:underline"
-                                href={`/tags/${slugify(tag)}`}
+                                href={`/tags/${getTagSlug(tag)}`}
                             >
                                 #{tag}
                             </a>
@@ -95,19 +93,19 @@ const { Content } = await render(post);
             }
             <Button
                 class="copy-url-button"
-                aria-label="Link kopieren"
+                aria-label="Copy link"
                 data-url={href}
-                data-tooltip-default="Link kopieren"
-                data-tooltip-success="Kopiert"
+                data-tooltip-default="Copy link"
+                data-tooltip-success="Copied"
             >
-                Link kopieren
+                Copy link
             </Button>
         </div>
     </article>
     {
         (prevPost || nextPost) && (
             <div class="mt-16 sm:mt-24 pt-12 border-t">
-                <h2 class="mb-12 text-xl sm:text-2xl">Weitere Beiträge</h2>
+                <h2 class="mb-12 text-xl sm:text-2xl">More articles</h2>
                 {nextPost && (
                     <PostPreview
                         post={nextPost}
@@ -142,7 +140,7 @@ const { Content } = await render(post);
 
             await navigator.clipboard.writeText(url);
 
-            button.innerText = "Kopiert";
+            button.innerText = "Copied";
 
             setTimeout(() => {
                 button.innerText = label;

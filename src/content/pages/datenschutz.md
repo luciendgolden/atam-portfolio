@@ -1,117 +1,110 @@
 ---
-title: Datenschutzerklärung
+title: Privacy Policy
 seo:
-  title: Datenschutzerklärung
-  description: 'Informationen zur Verarbeitung personenbezogener Daten auf Tampier: Vercel, Google Fonts, Theme-Einstellung und Kontakt per E-Mail.'
+  title: Privacy Policy
+  description: 'How Tampier handles personal data through Vercel hosting, Google Fonts, theme preferences, and email correspondence.'
 ---
 
-**Entwurf – rechtliche und technische Prüfung ausstehend.** Diese Erklärung beschreibt den im Quellcode erkennbaren Stand. Sie ist keine Bestätigung der DSGVO-Konformität. Anschrift, offene Anbieterangaben, Rechtsgrundlagen und Löschfristen müssen vor Veröffentlichung vervollständigt beziehungsweise geprüft werden.
+**Draft.** The use of externally hosted fonts, automatic storage of theme preferences, and the providers’ data processing arrangements are still under review.
 
-## 1. Verantwortlicher
+## 1. Data controller
 
-Alexander Tampier, Privatperson  
-**Anschrift – PLATZHALTER:** [Straße, Hausnummer, Postleitzahl und Wohnort ergänzen], Österreich  
-**E-Mail:** [alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)
+Alexander Tampier runs this personal portfolio as a private individual in Austria.
 
-An diese Adresse kannst du dich auch mit Fragen zur Verarbeitung deiner personenbezogenen Daten und zur Ausübung deiner Datenschutzrechte wenden.
+**Email** — [alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)
 
-## 2. Bereitstellung der Website und Hosting
+Use this address for questions about how your personal data is processed or to exercise your data protection rights.
 
-Die Website wird mit Astro als statische Website erstellt und laut Deployment-Konfiguration über **Vercel** bereitgestellt. Beim Abruf werden insbesondere deine IP-Adresse und die angeforderten Ressourcen an den Hostingdienst übermittelt. Hinzukommen können technische Verbindungsdaten wie Zeitpunkt, Browserinformationen und die verweisende Website, soweit dein Browser diese übermittelt.
+## 2. Website delivery and hosting
 
-**OFFEN:** Umfang und Dauer der technischen Protokollierung beim verwendeten Vercel-Angebot prüfen.
+The site is built with Astro and hosted as a static website on **Vercel**. When you visit, the hosting provider receives your IP address and information about the resources you request. It may also receive technical connection data such as the time of the request, browser details, and the referring website, depending on what your browser sends.
 
-- **Zwecke:** Auslieferung der Website, Sicherstellung des Betriebs und Abwehr von Missbrauch.
-- **Vorgesehene Rechtsgrundlage für die Bereitstellung:** Art. 6 Abs. 1 lit. f DSGVO; berechtigtes Interesse an einem sicheren und funktionsfähigen Webangebot. Die Interessenabwägung ist vor Veröffentlichung zu dokumentieren.
-- **Empfänger:** Vercel und eingesetzte Hosting- beziehungsweise Infrastruktur-Dienstleister.
-- **Speicherdauer:** **OFFEN:** Die für diese Bereitstellung geltende Frist oder die maßgeblichen Löschkriterien beim Anbieter klären und hier ergänzen.
+The scope and retention period of technical logging under the Vercel plan are still being verified.
 
-**OFFEN:** Die konkret zuständige Vercel-Gesellschaft und die datenschutzrechtlichen Rollen beziehungsweise erforderlichen Vereinbarungen anhand des verwendeten Accounts und der Vertragsbedingungen prüfen.
+- **Purposes** — Delivering the website, keeping it operational, and preventing abuse.
+- **Proposed legal basis for website delivery** — Article 6(1)(f) GDPR, based on the legitimate interest in operating a secure, functional website. The balancing assessment still needs to be documented before publication.
+- **Recipients** — Vercel Inc. in the United States and its infrastructure service providers.
+- **Retention** — The applicable retention period or deletion criteria for website delivery data are still being verified with the provider.
 
-Weitere Informationen: [Vercel-Datenschutzerklärung](https://vercel.com/legal/privacy-policy).
+Vercel processes customer data under its Data Processing Addendum and describes the data it processes as a controller in its Privacy Notice. See the [Vercel Terms of Service](https://vercel.com/legal/terms), the [Data Processing Addendum](https://vercel.com/legal/dpa), and the [Vercel Privacy Notice](https://vercel.com/legal/privacy-notice).
 
-## 3. Extern geladene Schriftarten: Google Fonts
+## 3. Externally hosted fonts
 
-Die Website bindet **IBM Plex Sans**, **IBM Plex Mono** und **Newsreader** über `fonts.googleapis.com` und `fonts.gstatic.com` ein. Der Browser stellt dafür Verbindungen zu Google her; bereits vorbereitende Verbindungen werden im Seitenkopf angefordert.
+The website loads **IBM Plex Sans**, **IBM Plex Mono**, and **Newsreader** through `fonts.googleapis.com` and `fonts.gstatic.com`. Your browser connects to Google to load these fonts. The page also tells the browser to open those connections in advance.
 
-Dabei erhält Google insbesondere deine IP-Adresse sowie technische Angaben zur Schriftanfrage und zum Browser. Je nach Browsereinstellung kann auch eine Information zur verweisenden Website übertragen werden. Der Zweck ist die Darstellung der gewählten Schriftarten. Ein Google-Konto ist dafür nicht erforderlich.
+Google receives your IP address and technical information about the font request and your browser. Depending on your browser settings, Google may also receive information about the referring website. These connections allow the site to display the selected fonts. You can load them without a Google account.
 
-**Aktueller technischer Stand:** Die Schriftarten werden beim Seitenaufruf ohne vorgeschaltete Einwilligungsabfrage geladen.
+The fonts currently load when you visit the site, without a prior consent prompt. The legal basis, responsible Google entity, retention period, and any international transfers are still under review. Consent under Article 6(1)(a) GDPR would have to be obtained before loading the fonts. Describing the request in this policy does not establish a legal basis. Hosting the fonts locally is an alternative that reduces data sharing.
 
-**Vor Veröffentlichung zu klären:** Rechtsgrundlage, zuständige Google-Gesellschaft, Speicherdauer und etwaige Drittlandübermittlung für diese konkrete Einbindung. Eine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO kann nicht vorausgesetzt werden, solange sie nicht tatsächlich vor dem Laden eingeholt wird. Die bloße Aufnahme in diese Erklärung ersetzt keine Rechtsgrundlage. Als datensparsame Alternative können die Schriftdateien lokal bereitgestellt werden.
+See the [Google Fonts privacy FAQ](https://developers.google.com/fonts/faq/privacy) and the [Google Privacy Policy](https://policies.google.com/privacy?hl=en).
 
-Weitere Informationen: [Datenschutz bei Google Fonts](https://developers.google.com/fonts/faq/privacy) und [Google-Datenschutzerklärung](https://policies.google.com/privacy?hl=de).
+## 4. Local storage of your theme preference
 
-## 4. Lokale Speicherung der Theme-Einstellung
+The website uses your browser’s **localStorage** to remember your light or dark theme.
 
-Die Website verwendet den Browserspeicher **localStorage**, um den hellen oder dunklen Darstellungsmodus zu speichern.
+- **Key** — `theme`
+- **Values** — `light` or `dark`
+- **Purpose** — Keeping your theme when you move between pages or return later.
+- **When it is stored** — On page load, the site writes your saved preference or a value based on your system preference. Using the theme toggle updates it.
+- **Retention** — The value has no expiry date in the code. It stays until it is overwritten or you clear the site’s data in your browser.
+- **Transmission** — The website does not send this value to a server.
 
-- **Schlüssel:** `theme`
-- **Werte:** `light` oder `dark`
-- **Zweck:** Beibehaltung der Darstellung beim Seitenwechsel und bei späteren Besuchen.
-- **Zeitpunkt:** Bereits beim Seitenaufruf wird die gespeicherte Einstellung oder die aus der Systempräferenz abgeleitete Einstellung geschrieben. Ein Klick auf den Theme-Schalter aktualisiert den Wert.
-- **Speicherdauer:** Kein Ablaufdatum im Code; der Wert bleibt grundsätzlich bis zur Löschung der Website-Daten im Browser oder bis zum Überschreiben erhalten.
-- **Übermittlung:** Der Website-Code übermittelt diesen Wert nicht an einen Server.
+Section 165(3) of the Austrian Telecommunications Act 2021 applies to cookies and comparable ways of storing or accessing information on a device. Whether the exception for storage strictly necessary to provide an expressly requested feature applies to automatic storage before any selection is still under review. Article 6 GDPR also requires a legal basis where personal data is processed.
 
-Die Regeln über den Zugriff auf Endgeräte nach **§ 165 Abs. 3 TKG 2021** gelten nicht nur für Cookies, sondern auch für vergleichbare Speichertechniken. Ob eine Ausnahme für eine ausdrücklich gewünschte, unbedingt erforderliche Funktion greift, muss insbesondere für die automatische Speicherung ohne vorherige Auswahl geprüft werden. Soweit personenbezogene Daten verarbeitet werden, ist zusätzlich eine Rechtsgrundlage nach Art. 6 DSGVO erforderlich.
+You can clear the preference through your browser’s site data settings. The current implementation writes a value again the next time you visit.
 
-**OFFEN:** Die Zulässigkeit der aktuellen automatischen Speicherung prüfen oder die Umsetzung so anpassen, dass die Einstellung nur auf ausdrücklichen Wunsch gespeichert wird. Das Löschen ist über die Website-Daten im Browser möglich; beim erneuten Aufruf schreibt der aktuelle Code den Wert wieder.
+See the [Austrian Data Protection Authority’s guidance on cookies and device storage](https://dsb.gv.at/faqs/datenschutz-cookies).
 
-Weitere Informationen: [Österreichische Datenschutzbehörde zu Cookies und Endgerätespeicherung](https://dsb.gv.at/faqs/datenschutz-cookies).
+## 5. Contact by email
 
-## 5. Kontakt per E-Mail
+When you write to the listed address, your email address, any name you include, your message, attachments, and technical email metadata are processed to respond to your inquiry. The site accepts inquiries by email.
 
-Wenn du an die angegebene E-Mail-Adresse schreibst, werden deine E-Mail-Adresse, ein gegebenenfalls mitgesendeter Name, der Nachrichteninhalt, Anhänge und technische E-Mail-Metadaten zur Bearbeitung deiner Anfrage verarbeitet. Auf dieser Website ist kein Kontaktformular eingebunden.
+- **Legal basis** — General inquiries are handled under Article 6(1)(f) GDPR, based on the legitimate interest in responding to incoming messages. Article 6(1)(b) GDPR applies where the inquiry concerns a contract or pre-contractual steps you request.
+- **Recipients** — The mailbox uses **Apple iCloud Mail**. Apple and any other email providers involved process data to deliver and store messages. Apple’s privacy policy identifies Apple Distribution International Limited, Ireland, as the responsible entity for people in the EEA.
+- **Deletion** — Ordinary inquiries are deleted from the mailbox, including the archive and trash, within 90 days after the inquiry is resolved. Records are kept longer where required by law or to establish, exercise, or defend legal claims.
 
-- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO für die Bearbeitung allgemeiner Anfragen; berechtigtes Interesse an der Beantwortung eingehender Nachrichten. Soweit eine Anfrage auf einen Vertrag oder vorvertragliche Maßnahmen auf deinen Wunsch gerichtet ist, kommt Art. 6 Abs. 1 lit. b DSGVO zur Anwendung.
-- **Empfänger:** Das veröffentlichte Postfach nutzt **Apple iCloud Mail**. Apple und gegebenenfalls beteiligte E-Mail-Dienstleister verarbeiten Daten zur Zustellung und Speicherung. Apple nennt für Personen im EWR Apple Distribution International Limited, Irland, als zuständige Gesellschaft in seiner Datenschutzrichtlinie.
-- **Löschung:** Für die eigene Korrespondenz ist eine Löschung vorgesehen, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten oder erforderlichen Gründe zur Rechtsverfolgung entgegenstehen. **OFFEN:** Einen konkreten Löschprozess einschließlich Archiv und Papierkorb festlegen; davon zu unterscheiden sind die Speicherfristen des Mailanbieters.
+You can read the site without sending an email. I may be unable to respond to an inquiry without the information needed to handle it. Please avoid sending sensitive data that is unnecessary for your inquiry.
 
-Du musst keine E-Mail senden, um die Website zu lesen. Ohne die zur Bearbeitung nötigen Angaben kann eine Anfrage gegebenenfalls nicht beantwortet werden. Bitte übermittle keine unnötigen sensiblen Daten.
+See the [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 
-Weitere Informationen: [Apple-Datenschutzrichtlinie](https://www.apple.com/legal/privacy/de-ww/).
+## 6. Transfers outside the EEA
 
-## 6. Übermittlungen außerhalb des EWR
+The external services described here may process data outside the European Economic Area, including in the United States. The relevant recipients, processing locations, and transfer safeguards under Articles 44 onward of the GDPR for Vercel, Google Fonts, and iCloud Mail are still being verified. Adequacy decisions and certifications apply only to the recipients and processing they cover.
 
-Bei den genannten externen Diensten kann eine Verarbeitung außerhalb des Europäischen Wirtschaftsraums, insbesondere in den USA, stattfinden. Die für Vercel, Google und Apple jeweils geltenden Übermittlungsmechanismen und Garantien sind vor Veröffentlichung zu prüfen.
+## 7. External links, RSS, and performance measurement
 
-**Vor Veröffentlichung zu prüfen:** Welche Empfänger, Verarbeitungsländer und Garantien nach Art. 44 ff. DSGVO für Vercel, die Google-Fonts-Einbindung und das iCloud-Postfach tatsächlich gelten. Ein Angemessenheitsbeschluss beziehungsweise eine Zertifizierung darf nur für die davon erfassten Empfänger und Verarbeitungen zugrunde gelegt werden. Die konkreten Angaben und die Bezugsquelle für einschlägige Garantien sind hier zu ergänzen; allgemeine Anbieterhinweise ersetzen diese Prüfung nicht.
+Links to GitHub, LinkedIn, publications, and other sources are ordinary links. Opening one takes you to the external provider, whose privacy information then applies. Vercel hosts this site, including the static RSS feed. An external feed reader may process data separately.
 
-## 7. Externe Links, RSS und nicht eingesetzte Funktionen
+The site has no user accounts, payment services, or newsletter signup. The site’s own code sets no cookies. It uses the local storage described above.
 
-Die Links zu GitHub, LinkedIn, Veröffentlichungen und anderen Quellen sind gewöhnliche Verweise, keine eingebetteten Social-Media-Plugins. Durch die Links allein lädt diese Website keine Inhalte der jeweiligen Ziele. Beim Öffnen eines Links gelten die Datenschutzinformationen des Zielanbieters. Als Hostingdienst dieser Website ist Vercel beteiligt.
+The site includes **Vercel Speed Insights** to measure loading and rendering performance. When enabled, it records information including the page visited, performance metrics, browser, device type, and country. Vercel states that the measurements are not associated with individual visitors or their IP addresses. See the [Vercel Speed Insights privacy information](https://vercel.com/docs/speed-insights/privacy-policy).
 
-Der RSS-Feed wird als statische Datei über denselben Hostingdienst ausgeliefert. Ein extern verwendeter Feedreader kann eigene Datenverarbeitungen vornehmen.
+Astro, Tailwind CSS, and the locally served interface scripts are used to build and display the website. The site does not call the AI models or APIs mentioned in project descriptions when you read those pages.
 
-Im geprüften Website-Code sind **keine aktiven Analyse- oder Werbetracker, Tracking-Pixel, Benutzerkonten oder Zahlungsdienste** eingebunden. Die vorhandene Newsletter-Komponente wird derzeit nicht in den Seiten gerendert; ein Newsletterdienst ist nicht angebunden. Der eigene Website-Code setzt keine Cookies, verwendet aber den oben beschriebenen localStorage. Dies trifft keine pauschale Aussage über die Verarbeitung durch die genannten Anbieter.
+## 8. Your rights
 
-Astro, Tailwind CSS und die lokal eingebundenen Oberflächen-Skripte sind Werkzeuge zur Erstellung und Darstellung der Website, keine zusätzlich eingebundenen externen Analysedienste. Die in Projektbeschreibungen erwähnten KI-Modelle und APIs werden beim Lesen dieser Seiten nicht aufgerufen.
+You have the following rights when the applicable legal conditions are met.
 
-## 8. Deine Rechte
+- Access to information about how your data is processed (Article 15 GDPR).
+- Rectification of inaccurate data (Article 16 GDPR).
+- Erasure of your data (Article 17 GDPR).
+- Restriction of processing (Article 18 GDPR).
+- Data portability (Article 20 GDPR).
+- **Objection to processing based on legitimate interests on grounds relating to your particular situation** (Article 21 GDPR).
+- Withdrawal of any consent you have given, effective for the future. Withdrawal does not affect the lawfulness of processing that took place before it (Article 7(3) GDPR).
 
-Unter den jeweiligen gesetzlichen Voraussetzungen stehen dir folgende Rechte zu:
+Send requests to the email address above. Requests are generally answered within one month. If a legally permitted extension is needed, you will be told why.
 
-- Auskunft über die Verarbeitung deiner Daten (Art. 15 DSGVO).
-- Berichtigung unrichtiger Daten (Art. 16 DSGVO).
-- Löschung deiner Daten (Art. 17 DSGVO).
-- Einschränkung der Verarbeitung (Art. 18 DSGVO).
-- Datenübertragbarkeit bei Vorliegen der Voraussetzungen (Art. 20 DSGVO).
-- **Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen aus Gründen deiner besonderen Situation** (Art. 21 DSGVO).
-- Widerruf einer gegebenenfalls erteilten Einwilligung mit Wirkung für die Zukunft; die Rechtmäßigkeit bis zum Widerruf bleibt unberührt (Art. 7 Abs. 3 DSGVO).
+You can lodge a complaint with a data protection supervisory authority, including in the place where you live, work, or believe an infringement occurred. In Austria, contact the [Austrian Data Protection Authority](https://dsb.gv.at/ueber-die-datenschutzbehoerde/kontakt).
 
-Für Anfragen nutze bitte die oben angegebene Kontaktadresse. Anfragen werden grundsätzlich innerhalb eines Monats beantwortet; gesetzlich zulässige Verlängerungen werden begründet mitgeteilt.
+**Austrian Data Protection Authority**
 
-Du kannst dich bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere an deinem Aufenthaltsort, Arbeitsplatz oder am Ort des vermuteten Verstoßes. In Österreich:
+Barichgasse 40–42, 1030 Vienna
 
-**Österreichische Datenschutzbehörde**  
-Barichgasse 40–42, 1030 Wien  
-E-Mail: [dsb@dsb.gv.at](mailto:dsb@dsb.gv.at)  
-[Kontakt und Informationen zur Datenschutzbehörde](https://dsb.gv.at/ueber-die-datenschutzbehoerde/kontakt)
+Email — [dsb@dsb.gv.at](mailto:dsb@dsb.gv.at)
 
-Durch den Betreiber findet auf dieser Website keine automatisierte Entscheidungsfindung mit rechtlicher oder ähnlich erheblicher Wirkung und kein entsprechendes Profiling statt.
+The operator does not use automated decision-making with legal or similarly significant effects or profiling of that kind on this website.
 
-## 9. Stand und offene Prüfung
+## 9. Draft date and outstanding review
 
-**Stand des Entwurfs: 13. Oktober 2026.** Grundlage sind der Quellcode und die dort konfigurierte Bereitstellung, nicht eine Prüfung des produktiven Hostings oder des E-Mail-Kontos.
-
-Vor Veröffentlichung sind insbesondere die Betreiberanschrift, die Anbieterrollen, die Löschfristen, die Drittlandgarantien sowie die Rechtsgrundlagen für externe Schriftarten und lokale Speicherung zu vervollständigen. Änderungen an Hosting, Kontaktmöglichkeiten oder eingebundenen Diensten erfordern eine erneute Prüfung dieser Erklärung.
+**Draft updated 22 November 2026.** The outstanding items are retention of technical hosting data, the applicable international transfer safeguards for each service, and the legal review of externally hosted fonts and automatic theme storage.

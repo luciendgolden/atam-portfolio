@@ -5,13 +5,19 @@ export function sortItemsByDateDesc(itemA: CollectionEntry<'blog' | 'projects'>,
     return new Date(itemB.data.publishDate).getTime() - new Date(itemA.data.publishDate).getTime();
 }
 
+export function getTagSlug(tag: string) {
+    const slug = slugify(tag);
+    // Keep the published tag URL when its display name is translated.
+    return slug === 'ai-engineering' ? 'ki-engineering' : slug;
+}
+
 export function getAllTags(posts: CollectionEntry<'blog'>[]) {
     const tags: string[] = [...new Set(posts.flatMap((post) => post.data.tags || []).filter(Boolean))];
     return tags
         .map((tag) => {
             return {
                 name: tag,
-                slug: slugify(tag)
+                slug: getTagSlug(tag)
             };
         })
         .filter((obj, pos, arr) => {
@@ -20,6 +26,6 @@ export function getAllTags(posts: CollectionEntry<'blog'>[]) {
 }
 
 export function getPostsByTag(posts: CollectionEntry<'blog'>[], tagSlug: string) {
-    const filteredPosts: CollectionEntry<'blog'>[] = posts.filter((post) => (post.data.tags || []).map((tag) => slugify(tag)).includes(tagSlug));
+    const filteredPosts: CollectionEntry<'blog'>[] = posts.filter((post) => (post.data.tags || []).map(getTagSlug).includes(tagSlug));
     return filteredPosts;
 }

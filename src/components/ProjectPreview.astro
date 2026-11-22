@@ -1,6 +1,5 @@
 ---
 import { type CollectionEntry } from "astro:content";
-import ArrowRight from "../icons/ArrowRight.astro";
 
 type Props = {
     project: CollectionEntry<"projects">;
@@ -29,7 +28,7 @@ const TitleTag = headingLevel;
                             ? seo.image.src
                             : `/${seo.image.src}`
                     }
-                    alt={seo.image.alt || `Abbildung zu ${title}`}
+                    alt={seo.image.alt || `Illustration for ${title}`}
                     class="size-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
             </div>

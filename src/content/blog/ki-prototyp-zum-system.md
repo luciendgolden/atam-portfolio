@@ -1,41 +1,41 @@
 ---
-title: 'Vom KI-Prototyp zum belastbaren System'
-excerpt: 'Ein Modellaufruf ist schnell gebaut. Entscheidend sind klare Schnittstellen, reproduzierbare Prüfungen und ein definierter Umgang mit Fehlern.'
+title: 'From AI Prototype to Reliable System'
+excerpt: 'Calling a model is easy. Building a reliable system takes clear interfaces, repeatable tests, and a plan for handling failures.'
 publishDate: '2026-09-14'
 isFeatured: true
 tags:
-  - KI-Engineering
+  - AI engineering
   - Evaluation
 seo:
-  description: 'Wie aus einem KI-Prototyp ein überprüfbares System wird: mit einfacher Ausgangsbasis, klaren Schnittstellen und gezielten Tests.'
+  description: 'Turn an AI prototype into a system you can test with a simple baseline, clear interfaces, and targeted evaluations.'
   image:
     src: '/models/saddle-surface.svg'
-    alt: 'Mathematische Sattelfläche als pinkes Drahtgitter'
+    alt: 'Mathematical saddle surface rendered as a pink wireframe'
 ---
 
-Ein KI-Prototyp wird belastbar, wenn sein Verhalten überprüfbar ist. Dazu gehören ein klarer Datenweg, ein sinnvoller Vergleichsmaßstab und festgelegte Reaktionen auf Fehler. Ein überzeugendes Einzelbeispiel sagt noch wenig über den späteren Betrieb aus.
+To build a reliable AI system, make its behavior testable. Map how data flows through it, choose a meaningful baseline, and define what happens when something fails. One convincing demo tells you little about how the system will behave in use.
 
-## Mit einer einfachen Ausgangsbasis beginnen
+## Start with a simple baseline
 
-Vor dem komplexeren Modell steht eine einfache Lösung: eine Suchfunktion, eine feste Regel oder ein kleines Vergleichsmodell. Erst der Vergleich zeigt, ob zusätzliche Komplexität einen praktischen Nutzen bringt. Auch Googles [Empfehlungen für ML-Engineering](https://developers.google.com/machine-learning/guides/rules-of-ml) stellen messbare Ziele, einfache erste Modelle und eine funktionierende Verarbeitungskette in den Mittelpunkt.
+Before trying a more complex model, build a simple solution. It could be a search function, a fixed rule, or a small baseline model. Comparing results shows whether the added complexity pays off in practice. Google's [ML engineering guidelines](https://developers.google.com/machine-learning/guides/rules-of-ml) also emphasize measurable goals, simple first models, and a working pipeline.
 
-## Einen prüfbaren Vertrag definieren
+## Define a testable contract
 
-Bei einem Wissensassistenten könnte der Vertrag so aussehen: Eine Frage und eine freigegebene Dokumentensammlung gehen hinein; eine Antwort mit passenden Fundstellen oder eine klare Rückmeldung bei fehlenden Belegen kommt heraus.
+A knowledge assistant might take a question and an approved set of documents as input. It returns either an answer that cites the relevant passages or a clear message explaining that the documents contain too little evidence to answer.
 
-Daraus entstehen konkrete Tests:
+That gives you specific tests to run.
 
-- Eine beantwortbare Frage muss die relevante Passage finden.
-- Eine veraltete Dokumentversion darf nicht stillschweigend als aktuell gelten.
-- Eine Frage ohne passende Information muss als unbeantwortbar erkennbar bleiben.
-- Ein fehlgeschlagener Modellaufruf braucht einen verständlichen Fehlerzustand.
+- For an answerable question, the assistant retrieves the relevant passage.
+- If the assistant uses an outdated document, it clearly identifies it as such.
+- If the documents lack the relevant information, the assistant clearly says it cannot answer.
+- If a model call fails, the assistant shows a clear error message.
 
-## Änderungen einzeln bewerten
+## Evaluate one change at a time
 
-Dokumentenaufbereitung, Suche und Antworterzeugung sind unterschiedliche Fehlerquellen. Für jeden Versuch bleiben Datenstand, Konfiguration und Modellversion festgehalten. Wird eine Komponente verändert, wird derselbe Fragenkatalog erneut ausgeführt.
+Document preparation, retrieval, and answer generation can each introduce errors. Record the data snapshot, configuration, and model version for every run. When you change a component, run the same set of questions again.
 
-Neben der fachlichen Qualität gehören Laufzeit und Ressourcenverbrauch in den Vergleich. Eine bessere Antwort kann im vorgesehenen Ablauf trotzdem zu langsam oder zu teuer sein.
+Compare answer quality, latency, and resource use. Even an improvement in answer quality can be too slow or expensive for the workflow.
 
-## Was zum ersten Stand gehört
+## What to include in the first delivery
 
-Eine nützliche erste Lieferung besteht aus einem Demonstrator, einem kleinen Testkatalog und einem Fehlerbericht. Der Bericht erklärt, welche Fälle funktionieren, welche scheitern und welche Änderung als Nächstes geprüft werden soll. Das macht den nächsten Entwicklungsschritt nachvollziehbar.
+A useful first delivery includes a working demo, a small test suite, and a report on failures. The report records which cases pass, which fail, and what change to test next. This makes it clear why the next development step was chosen.
