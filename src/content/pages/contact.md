@@ -1,12 +1,10 @@
 ---
-title: Kontakt
+title: Contact
 seo:
-  title: Kontakt
-  description: Austausch über angewandte KI, maschinelles Lernen, Robotik und die Entwicklung nachvollziehbarer technischer Systeme.
+  title: Contact
+  description: Get in touch to discuss applied AI, machine learning, robotics, and how to build technical systems whose behavior is easy to understand.
 ---
 
-Du möchtest dich über ein technisches Problem, eine Projektidee oder einen der Beiträge austauschen? 
+Want to discuss a technical problem, a project idea, or one of the articles?
 
-Schreib mir gerne per Email unter:
-
-[alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com)
+Email me at [alexander.tampier@icloud.com](mailto:alexander.tampier@icloud.com).

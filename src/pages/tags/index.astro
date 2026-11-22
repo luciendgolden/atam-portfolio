@@ -13,11 +13,11 @@ const tags = getAllTags(posts).sort((tagA, tagB) => {
 ---
 
 <BaseLayout
-    title="Themen"
-    description="Beiträge nach Themen entdecken: KI-Engineering, maschinelles Lernen, Evaluation und Robotik."
+    title="Topics"
+    description="Browse articles by topic: AI engineering, machine learning, evaluation, and robotics."
     showHeader={false}
 >
-    <h1 class="mb-12 text-2xl font-mono sm:mb-16 sm:text-4xl">Alle Themen</h1>
+    <h1 class="mb-12 text-2xl font-mono sm:mb-16 sm:text-4xl">All topics</h1>
     {
         tags.map((tag) => {
             const postCount = getPostsByTag(posts, tag.slug).length;
@@ -28,11 +28,11 @@ const tags = getAllTags(posts).sort((tagA, tagB) => {
                             {tag.name}
                         </h2>
                         <div class="mt-1 text-sm leading-normal">
-                            {postCount} {postCount === 1 ? 'Beitrag' : 'Beiträge'}
+                            {postCount} {postCount === 1 ? 'article' : 'articles'}
                         </div>
                     </div>
                     <div class="hidden font-mono opacity-0 transition group-hover:opacity-100 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
-                        Beiträge ansehen <ArrowRight class="fill-current w-4 h-4" />
+                        View articles <ArrowRight class="fill-current w-4 h-4" />
                     </div>
                 </a>
             );

@@ -33,12 +33,12 @@ const currentTag = allTags.find((tag) => {
 ---
 
 <BaseLayout
-    title={`Beiträge zum Thema ${currentTag?.name}`}
-    description={`Technische Beiträge zum Thema ${currentTag?.name} – Grundlagen, Entscheidungen und praktische Ansätze.`}
+    title={`Articles on ${currentTag?.name}`}
+    description={`Blog on ${currentTag?.name}, covering fundamentals, decisions, and practical approaches.`}
     image={siteConfig.image}
     showHeader={false}
 >
-    <h1 class="mb-12 text-2xl leading-tight font-mono sm:mb-16 sm:text-4xl">Beiträge zu „{currentTag?.name}“</h1>
+    <h1 class="mb-12 text-2xl leading-tight font-mono sm:mb-16 sm:text-4xl">Articles on {currentTag?.name}</h1>
     {blog.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>
